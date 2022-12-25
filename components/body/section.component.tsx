@@ -1,8 +1,11 @@
 import Carousel from "./carousel.component";
 const Section = () => {
   return (
-    <div className="section flex flex-row w-5/6 mt-40">
-      <div className="flex flex-col w-full md:w-1/2 items-center justify-left">
+    <div className="section flex flex-row  mt-40">
+      <div className="md:flex hidden md:w-1/6 ">
+        
+        </div>
+      <div className="flex flex-col w-full md:w-2/6 items-center justify-left">
         <div>
           <p className="text-left text-4xl font-bold text-white">
             Aplikacija za stomatološke ordinacije
@@ -24,8 +27,11 @@ const Section = () => {
           </button>
         </div>
       </div>
-      <div className="md:flex hidden md:w-1/2 items-center justify-center">
+      <div className="md:flex hidden md:w-2/6 ">
         <Carousel />
+      </div>
+      <div className="md:flex hidden md:w-1/6 ">
+        
       </div>
     </div>
   );

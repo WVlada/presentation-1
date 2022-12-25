@@ -1,11 +1,11 @@
 import Section from "./body/section.component";
 const Body = () => {
   return (
-    <div className="flex flex-grow flex-col ">
-      <div className="h-full flex flex-grow justify-center ">
+    <div className="flex flex-grow flex-col relative ">
+      <div className="min-h-screen flex flex-grow justify-center ">
         <Section />
       </div>
-      <div className="bg-mainlight h-40 w-[130%] -rotate-6 -mb-14"></div>
+      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16 "></div>
     </div>
   );
 };
