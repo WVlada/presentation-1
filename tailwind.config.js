@@ -11,6 +11,7 @@ module.exports = {
      },
       colors: {
         main: "#A1CAC0",
+        maindark: "#73aeaa",
         mainlight: "#f2fefe",
         footertextcolor: "#515656",
         secondary: "#138fc2",
