@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Body from "../components/body";
 import Usluge from "../components/body/usluge.component";
+import SecondCarousel from '../components/secondcarousel'
 export default function Home() {
   return (
     <>
@@ -28,6 +29,10 @@ export default function Home() {
         <Body />
       </main>
       <Usluge />
+      <div className="flex flex-grow flex-col relative mb-40 ">
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+      </div>
+      <SecondCarousel />
       <Footer />
     </>
   );

@@ -1,0 +1,103 @@
+.zero {
+    animation: ease;
+    animation-name: loadanimationZero;
+    animation-duration: 1s;
+}
+.first {
+    animation: ease;
+    animation-name: loadanimationFirst;
+    animation-duration: 1s;
+    
+}
+.second {
+    animation: ease;
+    animation-name: loadanimationSecond;
+    animation-duration: 1s;
+    
+}
+.third {
+    animation: ease;
+    animation-name: loadanimationThird;
+    animation-duration: 1s;
+    
+}
+.fourth {
+    animation: ease;
+    animation-name: loadanimationFourth;
+    animation-duration: 1s;
+    
+}
+.fifth {
+    animation: ease;
+    animation-name: loadanimationFifth;
+    animation-duration: 1s;
+    
+}
+
+
+@keyframes loadanimationZero {
+        from {
+            transform: translateX(-300px);
+            opacity: 0;
+        } 
+        to {
+            transform: translateX(0px);
+            opacity: 100;
+        }
+        
+    }
+    @keyframes loadanimationFirst {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+    
+}
+@keyframes loadanimationSecond {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+    
+}
+@keyframes loadanimationThird {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+    
+}
+@keyframes loadanimationFourth {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+    
+}
+@keyframes loadanimationFifth {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+    
+}

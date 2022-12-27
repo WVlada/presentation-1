@@ -12,31 +12,37 @@ export default function Usluge() {
       title: "Kreiranje firme i povezane firme",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge1.png",
+      flag: true,
     },
     {
       title: "Kreiranje naloga i kontnih planova",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge2.png",
+      flag: true,
     },
     {
       title: "Konsolidovanje",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge3.png",
+      flag: true,
     },
     {
       title: "Finansije",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge4.png",
+      flag: false,
     },
     {
       title: "Podesive liste",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge5.png",
+      flag: false,
     },
     {
       title: "Dugovanja",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge6.png",
+      flag: true,
     },
   ];
   return (
@@ -57,8 +63,8 @@ export default function Usluge() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-12 p-10 mt-20">
-        {cards.map((card) => {
-          return <Card key={card.title} {...card} />;
+        {cards.map((card, index) => {
+          return <Card key={card.title} {...card} index={index} />;
         })}
       </div>
     </div>
