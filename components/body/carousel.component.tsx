@@ -8,46 +8,63 @@ import {} from "@fortawesome/free-solid-svg-icons";
 export default function Carousel() {
   let item = {
     images: [
-      "bg-[url('/images/laptoppng1.png')]",
-      "bg-[url('/images/laptoppng2.png')]",
-      "bg-[url('/images/laptoppng3.png')]",
-      "bg-[url('/images/laptoppng4.png')]",
+      "/images/laptoppng1.png",
+      "/images/laptoppng2.png",
+      "/images/laptoppng3.png",
+      "/images/laptoppng4.png",
     ],
   };
   const [currentPic, setCurrentPic] = useState(0);
-  const [disappear, setDisapear] = useState(" ");
+  //const [disappear, setDisapear] = useState(" ");
 
   const handleRightArrowClick = () => {
-    setDisapear(" opacity-10 transition duration-500 ease-in-out");
-    setTimeout(() => {
-      setCurrentPic(currentPic === item.images.length - 1 ? 0 : currentPic + 1);
-      setDisapear(" ");
-    }, 500);
+    //setDisapear(" opacity-10 transition duration-500 ease-in-out");
+    //setTimeout(() => {
+    setCurrentPic(currentPic === item.images.length - 1 ? 0 : currentPic + 1);
+    // setDisapear(" ");
+    //}, 500);
   };
   const handleLeftArrowClick = () => {
-    setDisapear(" opacity-10 transition duration-500 ease-in-out");
-    setTimeout(() => {
-      setCurrentPic(currentPic === 0 ? item.images.length - 1 : currentPic - 1);
-      setDisapear(" ");
-    }, 500);
+    //setDisapear(" opacity-10 transition duration-500 ease-in-out");
+    //setTimeout(() => {
+    setCurrentPic(currentPic === 0 ? item.images.length - 1 : currentPic - 1);
+    //  setDisapear(" ");
+    //}, 500);
   };
-  //let images = { 1: { 1: "bg-[url('/images/carousel/image1.jpg')]", 2: "bg-[url('/images/carousel/image2.jpg')]", 3: "bg-[url('/images/carousel/image3.jpg')]", 4: "bg-[url('/images/carousel/image4.jpg')]" }, 2: { 1: '', 2: '', 3: '', 4: '' }, 3: { 1: '', 2: '', 3: '', 4: '' }, 4: { 1: '', 2: '', 3: '', 4: '' } }
-  const classname = item.images[currentPic] + " " + disappear;
+
+  //const classname = item.images[currentPic] + " " //+ disappear;
+  const classname = "flex opacity-100 justify-center";
   return (
-    <div className={"w-full flex flex-col  "}>
+    <div className={"w-full flex flex-col min-w-[500px]  "}>
       <div
         className={
-          " bg-contain bg-no-repeat h-64 bg-center mt-6  " +
+          "relative h-64 " +
           classname
         }
-      ></div>
-
-      <div className=" justify-left mt-5 items-center  flex flex-row bg-opacity-20 cursor-pointer ">
+      >
+        {item.images.map((src, index) => {
+          return (
+            <Image
+              key={src}
+              src={src}
+              width={426}
+              height={240}
+              alt="laptop image"
+              className={
+                "absolute transition duration-700 ease-in-out " +
+                (index == currentPic ? classname : " opacity-0 ")
+              }
+            />
+          );
+        })}
+      
+      </div>
+      <div className=" justify-center items-center  flex flex-row bg-opacity-20 cursor-pointer ">
         <FontAwesomeIcon
           size="lg"
           onClick={handleLeftArrowClick}
           color={"#ffffff"}
-          className="ml-20"
+          className=""
           icon={faArrowLeft}
         />
         <p className="text-white ml-5 mr-5 font-bold">/</p>
@@ -61,6 +78,7 @@ export default function Carousel() {
           />
         </div>
       </div>
+      
     </div>
   );
 }

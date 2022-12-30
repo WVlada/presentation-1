@@ -1,5 +1,4 @@
 import Carousel from "./carousel.component";
-import Carousel2 from "./carousel2.component";
 const Section = () => {
   return (
     <div className="section flex flex-row  mt-40 ">
@@ -26,8 +25,7 @@ const Section = () => {
         </div>
       </div>
       <div className="md:flex hidden md:w-5/12 ">
-        {/*<Carousel />*/}
-        <Carousel2 />
+        <Carousel />
       </div>
       <div className="md:flex hidden md:w-1/12 ">
         
