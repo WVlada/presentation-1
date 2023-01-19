@@ -4,7 +4,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Body from "../components/body";
 import Usluge from "../components/body/usluge.component";
-import Carousel2 from '../components/carousel2'
+import Carousel2 from "../components/carousel2";
 export default function Home() {
   return (
     <>
@@ -27,13 +27,17 @@ export default function Home() {
       <main className="flex flex-col h-full min-h-screen bg-backlinear">
         <Header />
         <Body />
-      </main>
-      <Usluge />
-      <div className="flex flex-grow flex-col relative mb-40 ">
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
-      </div>
-      <Carousel2 />
-      <Footer />
+</main>
+        <Usluge />
+        <div className="flex flex-grow flex-col relative mb-40 ">
+          <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+        </div>
+        <div className="flex flex-grow flex-col relative mb-40 bg-backlinear -mt-40 ">
+          <Carousel2 />
+        </div>
+        
+        <Footer />
+      
     </>
   );
 }

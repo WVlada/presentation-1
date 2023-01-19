@@ -35,7 +35,7 @@ export default function Carousel2() {
   //const classname = item.images[currentPic] + " " //+ disappear;
   const classname = "flex opacity-100 justify-center";
   return (
-    <div className={"w-full flex flex-col min-w-[500px]  "}>
+    <div className={"w-full flex flex-col lg:flex-row min-w-[500px] mt-40  "}>
       <div
         className={
           "relative h-64 " +
@@ -60,23 +60,10 @@ export default function Carousel2() {
       
       </div>
       <div className=" justify-center items-center  flex flex-row bg-opacity-20 cursor-pointer ">
-        <FontAwesomeIcon
-          size="lg"
-          onClick={handleLeftArrowClick}
-          color={"#ffffff"}
-          className=""
-          icon={faArrowLeft}
-        />
-        <p className="text-white ml-5 mr-5 font-bold">/</p>
-        <div className="  flex justify-center items-center bg-opacity-20 cursor-pointer">
-          <FontAwesomeIcon
-            size="lg"
-            onClick={handleRightArrowClick}
-            color={"#ffffff"}
-            className=""
-            icon={faArrowRight}
-          />
-        </div>
+        <div>tect</div>
+        <div>tect</div>
+        <div>tect</div>
+        <div>tect</div>
       </div>
       
     </div>
