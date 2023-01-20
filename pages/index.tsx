@@ -29,10 +29,10 @@ export default function Home() {
         <Body />
 </main>
         <Usluge />
-        <div className="flex flex-grow flex-col relative mb-40 ">
+        <div className="flex flex-grow flex-col relative mb-48 ">
           <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
         </div>
-        <div className="flex flex-grow flex-col relative mb-40 bg-backlinear -mt-40 ">
+        <div className="flex flex-grow flex-col relative bg-backlinear -mt-40 ">
           <Carousel2 />
         </div>
         
