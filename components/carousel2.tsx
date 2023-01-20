@@ -35,37 +35,47 @@ export default function Carousel2() {
   //const classname = item.images[currentPic] + " " //+ disappear;
   const classname = "flex opacity-100 justify-center";
   return (
-    <div className={"w-full flex flex-col lg:flex-row min-w-[500px] mt-40  "}>
-      <div
-        className={
-          "relative h-64 " +
-          classname
-        }
-      >
-        {item.images.map((src, index) => {
-          return (
-            <Image
-              key={src}
-              src={src}
-              width={426}
-              height={240}
-              alt="laptop image"
-              className={
-                "absolute transition duration-700 ease-in-out " +
-                (index == currentPic ? classname : " opacity-0 ")
-              }
-            />
-          );
-        })}
-      
+    <div className={"w-full flex flex-col mt-40  "}>
+      <div className={"relative flex  lg:flex-row flex-col  " + classname}>
+        <div className=" justify-center items-center lg:w-1/2 flex flex-col bg-opacity-20 cursor-pointer ">
+          <div className="">
+            <p>tect</p>
+          </div>
+          <div className="">
+            <p>tect</p>
+          </div>
+          <div className="">
+            <p>tect</p>
+          </div>
+          <div className="">
+            <p>tect</p>
+          </div>
+        </div>
+        <div className="flex lg:w-1/2 relative h-64">
+          {item.images.map((src, index) => {
+            return (
+              <Image
+                key={src}
+                src={src}
+                width={426}
+                height={240}
+                alt="laptop image"
+                className={
+                  "absolute transition duration-700 ease-in-out " +
+                  (index == currentPic ? classname : " opacity-0 ")
+                }
+              />
+            );
+          })}
+        </div>
       </div>
-      <div className=" justify-center items-center  flex flex-row bg-opacity-20 cursor-pointer ">
-        <div>tect</div>
-        <div>tect</div>
-        <div>tect</div>
-        <div>tect</div>
+
+      <div className="flex flex-row justify-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
       </div>
-      
     </div>
   );
 }
