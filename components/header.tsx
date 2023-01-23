@@ -16,11 +16,11 @@ const Header = () => {
   }, []);
   let bg = bgState ? " bg-main" : " bg-none"
   return (
-    <div className={"flex text-white justify-center " + bg}>
+    <div className={"flex text-white justify-between max-w-[1200px] mx-auto w-full " + bg}>
       {inView && (
         <div
           onClick={handleArrowClick}
-          className="absolute right-5 bottom-5 bg-main rounded-full p-2  animate-bounce cursor-pointer"
+          className="absolute right-5 bottom-5  bg-main rounded-full p-2  animate-bounce cursor-pointer "
         >
           <svg
             className="w-5 h-5 rotate-180 "
@@ -36,7 +36,7 @@ const Header = () => {
         </div>
       )}
 
-      <div className="flex flex-row justify-between w-5/6">
+      <div className="flex flex-row justify-between w-full px-20">
         <div className="flex items-center">
           <div className="w-32 ">
             <Image

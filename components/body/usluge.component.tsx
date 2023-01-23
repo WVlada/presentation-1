@@ -48,7 +48,7 @@ export default function Usluge() {
   return (
     <div
       className={
-        "md:p-10  w-full text-center relative  bg-mainlight text-footertextcolor z-50 "
+        "md:p-10 mx-auto  w-full text-center relative max-w-[1200px] w-full  bg-mainlight text-footertextcolor z-50 "
       }
     >
       <div className="mt-5">

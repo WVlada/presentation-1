@@ -24,20 +24,30 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="flex flex-col h-full min-h-screen bg-backlinear">
+      <main className="flex flex-col justify-center min-h-screen bg-backlinear w-full ">
         <Header />
+
         <Body />
-</main>
+      </main>
+      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+      <div className="w-full bg-mainlight">
         <Usluge />
-        <div className="flex flex-grow flex-col relative mb-48 ">
-          <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+      </div>
+
+      <div className="flex flex-grow flex-col relative mb-48 ">
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+      </div>
+
+      <div className="w-full bg-backlinear">
+        <div className="flex flex-grow flex-col relative -mt-40 max-w-[1200px] w-full mx-auto ">
+          <div className="mt-20 mb-20">
+            <Carousel2 />
+          </div>
+          
         </div>
-        <div className="flex flex-grow flex-col relative bg-backlinear -mt-40 ">
-          <Carousel2 />
-        </div>
-        
-        <Footer />
-      
+      </div>
+
+      <Footer />
     </>
   );
 }

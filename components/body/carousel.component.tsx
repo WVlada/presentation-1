@@ -35,10 +35,10 @@ export default function Carousel() {
   //const classname = item.images[currentPic] + " " //+ disappear;
   const classname = "flex opacity-100 justify-center";
   return (
-    <div className={"w-full flex flex-col min-w-[500px]  "}>
+    <div className={" flex flex-col min-w-[500px] w-[1200px] "}>
       <div
         className={
-          "relative h-64 " +
+          "relative h-[300px] flex items-center  " +
           classname
         }
       >
@@ -47,11 +47,13 @@ export default function Carousel() {
             <Image
               key={src}
               src={src}
-              width={426}
-              height={240}
+              //width={426}
+              //height={240}
+              style={{ objectFit: "contain" }}
+              fill
               alt="laptop image"
               className={
-                "absolute transition duration-700 ease-in-out " +
+                "absolute transition duration-700 ease-in-out object-top " +
                 (index == currentPic ? classname : " opacity-0 ")
               }
             />
