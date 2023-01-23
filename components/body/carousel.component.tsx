@@ -53,7 +53,7 @@ export default function Carousel() {
               fill
               alt="laptop image"
               className={
-                "absolute transition duration-700 ease-in-out object-top " +
+                "absolute transition duration-700 ease-in-out object-bottom " +
                 (index == currentPic ? classname : " opacity-0 ")
               }
             />

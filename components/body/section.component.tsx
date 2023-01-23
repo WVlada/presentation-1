@@ -5,7 +5,7 @@ const Section = () => {
       {/*<div className="md:flex hidden md:w-1/12 ">
         
   </div>*/}
-      <div className="flex flex-col w-full md:w-6/12 p-10 md:p-0 justify-left h-[300px]">
+      <div className="flex flex-col w-full md:w-6/12 p-0 justify-left h-[300px]">
         
           <p className="text-left text-4xl font-bold text-white">
             Aplikacija za računovodstvene agencije

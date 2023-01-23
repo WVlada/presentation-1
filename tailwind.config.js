@@ -17,6 +17,15 @@ module.exports = {
         secondary: "#138fc2",
         tertiary: "#2f60c3"
       },
+      keyframes: {
+        carousel2: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        carousel2: 'carousel2 1s ease-in-out infinite',
+      }
     },
   },
   plugins: [],
