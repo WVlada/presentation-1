@@ -1,0 +1,11 @@
+.animate_in_out {
+    animation: inout 3s forwards;
+    
+}
+@keyframes inout {
+   0%   {transform: translate(0px, 30px); opacity: 0;}
+  25%  {transform: translate(0px, 0px); }
+  50%  {transform: translate(0px, 0px); opacity: 1}
+  75%  {}
+  100% {transform: translate(0px, -30px); opacity: 0}
+  }

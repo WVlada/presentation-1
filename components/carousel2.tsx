@@ -7,6 +7,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
 import { isTemplateSpan } from "typescript";
 import { type } from "os";
+import styles from './carousel2.module.css'
 export default function Carousel2() {
   let item = {
     images: [
@@ -82,14 +83,14 @@ export default function Carousel2() {
 
   return (
     <div className={"w-full flex flex-col mt-40 text-white px-10 lg:px-20  "}>
-      <div className={"relative flex lg:flex-row flex-col "}>
+      <div className={"relative flex lg:flex-row flex-col overflow-hidden "}>
         {item.texts.map((tex, index) =>
           index == currentPic ? (
             <div
             key={index}
               className={
-                "justify-left lg:w-1/2 mb-10 md:mb-0 flex flex-col bg-opacity-20 cursor-pointer " +
-                classnameShow
+                "justify-left lg:w-1/2 mb-10 md:mb-0 flex flex-col bg-opacity-20 cursor-pointer " + styles.animate_in_out
+                //classnameShow
               }
             >
               <div className="text-4xl font-bold">
