@@ -1,11 +1,64 @@
-.animate_in_out {
-    animation: inout 3s forwards;
-    
+.animate_in {
+    animation: in 1s forwards;
+    /*animation-delay: -500ms;*/
 }
-@keyframes inout {
+
+@keyframes in {
    0%   {transform: translate(0px, 30px); opacity: 0;}
-  25%  {transform: translate(0px, 0px); }
-  50%  {transform: translate(0px, 0px); opacity: 1}
-  75%  {}
-  100% {transform: translate(0px, -30px); opacity: 0}
-  }
+  /*25%  {transform: translate(0px, 0px); }*/
+  /*50%  {}*/
+  /*75%  {}*/
+  100% {transform: translate(0px, 0px); opacity: 1}
+}
+
+.animate_out {
+    animation: out .5s forwards;
+}
+
+@keyframes out {
+    0%   {transform: translate(0px, 0px); opacity: 1;}
+   /*25%  {transform: translate(0px, 0px); }*/
+   /*50%  {transform: translate(0px, 0px); opacity: 1}*/
+   75%  {}
+   100% {transform: translate(-300px, 0px); opacity: 0}
+   }
+    
+.animate_in2 {
+    animation: in .6s forwards;
+    /*animation-delay: -300ms;*/
+}
+
+.animate_in3 {
+    animation: in 1.2s forwards;
+    /*animation-delay: -400ms;*/
+}
+
+.animate_in4 {
+    animation: in 1.4s forwards;
+    /*animation-delay: -500ms;*/
+}
+.animate_in_picture {
+    animation: in_picture 1.5s forwards;
+    /*animation-delay: 300ms;*/
+}
+
+@keyframes in_picture {
+   0%   {transform: translate(300px, 0px); opacity: 0;}
+  /*25%  {transform: translate(0px, 0px); }*/
+  /*50%  {}*/
+  /*75%  {}*/
+  100% {transform: translate(0px, 0px); opacity: 1}
+}
+
+.animate_out_picture {
+    animation: out_picture .8s forwards;
+    /*animation-delay: -500ms;*/
+}
+
+@keyframes out_picture {
+   0%   {transform: translate(0px, 0px); opacity: 1;}
+  /*25%  {transform: translate(0px, 0px); }*/
+  /*50%  {}*/
+  50%  {opacity: 0}
+  100% {transform: translate(-500px, 0px); opacity: 0}
+}

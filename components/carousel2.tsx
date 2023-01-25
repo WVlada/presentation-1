@@ -7,7 +7,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
 import { isTemplateSpan } from "typescript";
 import { type } from "os";
-import styles from './carousel2.module.css'
+import styles from "./carousel2.module.css";
 export default function Carousel2() {
   let item = {
     images: [
@@ -44,6 +44,8 @@ export default function Carousel2() {
     ],
   };
   const [currentPic, setCurrentPic] = useState(0);
+  const [currentPic2, setCurrentPic2] = useState(0);
+
   const [arrayOfTimers, setArrayOfTimers] = useState([]);
   //console.log(arrayOfTimers)
   //const [disappear, setDisapear] = useState(" ");
@@ -53,10 +55,32 @@ export default function Carousel2() {
     const timer = setTimeout(() => {
       if (currentPic >= item.images.length - 1) {
         setCurrentPic(0);
+        setCurrentClass(styles.animate_out);
+        setCurrentClass2(styles.animate_out);
+        setCurrentClass3(styles.animate_out);
+        setCurrentClass4(styles.animate_out);
+        setTimeout(() => {
+          setCurrentPic2(0);
+          setCurrentClass(styles.animate_in);
+          setCurrentClass2(styles.animate_in);
+          setCurrentClass3(styles.animate_in);
+          setCurrentClass4(styles.animate_in);
+        }, 500);
       } else {
         setCurrentPic(currentPic + 1);
+        setCurrentClass(styles.animate_out);
+        setCurrentClass2(styles.animate_out);
+        setCurrentClass3(styles.animate_out);
+        setCurrentClass4(styles.animate_out);
+        setTimeout(() => {
+          setCurrentPic2(currentPic + 1);
+          setCurrentClass(styles.animate_in);
+          setCurrentClass2(styles.animate_in);
+          setCurrentClass3(styles.animate_in);
+          setCurrentClass4(styles.animate_in);
+        }, 500);
       }
-    }, 3000);
+    }, 5000);
     //console.log(arrayOfTimers)
     arrayOfTimers.map((arr) => {
       console.log(arr);
@@ -66,16 +90,33 @@ export default function Carousel2() {
     //console.log(currentPic);
     return () => clearTimeout(timer);
   }, [currentPic]);
+
+  const [curentClass, setCurrentClass] = useState(styles.animate_in);
+  const [curentClass2, setCurrentClass2] = useState(styles.animate_in2);
+  const [curentClass3, setCurrentClass3] = useState(styles.animate_in3);
+  const [curentClass4, setCurrentClass4] = useState(styles.animate_in4);
+
+  useEffect(() => {}, [currentPic]);
   const handleClick = (e) => {
     if (+e != currentPic) {
       //clearTimeout(timer);
       setCurrentPic(+e);
+      setCurrentClass(styles.animate_out);
+      setCurrentClass2(styles.animate_out);
+      setCurrentClass3(styles.animate_out);
+      setCurrentClass4(styles.animate_out);
+      setTimeout(() => {
+        setCurrentPic2(+e);
+        setCurrentClass(styles.animate_in);
+        setCurrentClass2(styles.animate_in);
+        setCurrentClass3(styles.animate_in);
+        setCurrentClass4(styles.animate_in);
+      }, 500);
     }
   };
 
   //const classname = item.images[currentPic] + " " //+ disappear;
-  const classnameShow =
-    " animate-carousel2 ";
+  const classnameShow = " animate-carousel2 ";
   const classnameHide =
     "opacity-0 transition-all duration-700 -translate-y-10 ";
 
@@ -85,29 +126,28 @@ export default function Carousel2() {
     <div className={"w-full flex flex-col mt-40 text-white px-10 lg:px-20  "}>
       <div className={"relative flex lg:flex-row flex-col overflow-hidden "}>
         {item.texts.map((tex, index) =>
-          index == currentPic ? (
+          index == currentPic2 ? (
             <div
-            key={index}
+              key={index}
               className={
-                "justify-left lg:w-1/2 mb-10 md:mb-0 flex flex-col bg-opacity-20 cursor-pointer " + styles.animate_in_out
+                "justify-left lg:w-1/2 mb-10 md:mb-0 flex flex-col bg-opacity-20 cursor-pointer "
+                //+ curentClass
                 //classnameShow
               }
             >
-              <div className="text-4xl font-bold">
+              <div className={"text-4xl font-bold " + curentClass2}>
                 {tex.header}
               </div>
-              <div className="mt-8 text-sm h-16">
+              <div className={"mt-8 text-sm h-16 " + curentClass3}>
                 {tex.text}
               </div>
-              <div className="mt-8 flex flex-grow items-end">
+              <div className={"mt-8 flex flex-grow items-end lg:items-center " + curentClass4}>
                 <button className="text-sm transition-colors duration-700 hover:bg-tertiary hover:text-white text-center text-secondary bg-white py-3 px-6 rounded-full">
                   Kontakt za više informacija
                 </button>
               </div>
             </div>
-          ) : (
-            null
-          )
+          ) : null
         )}
 
         <div className="flex lg:w-1/2 relative h-80 justify-center items-end md:mt-10 lg:mt-0 flex-grow mb-0 ">
@@ -122,8 +162,8 @@ export default function Carousel2() {
                 //height={240}
                 alt="laptop image"
                 className={
-                  "absolute transition duration-700 ease-in-out object-bottom " +
-                  (index == currentPic ? classname2 : " opacity-0 ")
+                  "absolute object-bottom " +
+                  (index == currentPic ? styles.animate_in_picture : styles.animate_out_picture)
                 }
               />
             );
