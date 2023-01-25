@@ -62,9 +62,9 @@ export default function Carousel2() {
         setTimeout(() => {
           setCurrentPic2(0);
           setCurrentClass(styles.animate_in);
-          setCurrentClass2(styles.animate_in);
-          setCurrentClass3(styles.animate_in);
-          setCurrentClass4(styles.animate_in);
+          setCurrentClass2(styles.animate_in2);
+          setCurrentClass3(styles.animate_in3);
+          setCurrentClass4(styles.animate_in4);
         }, 500);
       } else {
         setCurrentPic(currentPic + 1);
@@ -75,9 +75,9 @@ export default function Carousel2() {
         setTimeout(() => {
           setCurrentPic2(currentPic + 1);
           setCurrentClass(styles.animate_in);
-          setCurrentClass2(styles.animate_in);
-          setCurrentClass3(styles.animate_in);
-          setCurrentClass4(styles.animate_in);
+          setCurrentClass2(styles.animate_in2);
+          setCurrentClass3(styles.animate_in3);
+          setCurrentClass4(styles.animate_in4);
         }, 500);
       }
     }, 5000);
@@ -108,9 +108,9 @@ export default function Carousel2() {
       setTimeout(() => {
         setCurrentPic2(+e);
         setCurrentClass(styles.animate_in);
-        setCurrentClass2(styles.animate_in);
-        setCurrentClass3(styles.animate_in);
-        setCurrentClass4(styles.animate_in);
+        setCurrentClass2(styles.animate_in2);
+        setCurrentClass3(styles.animate_in3);
+        setCurrentClass4(styles.animate_in4);
       }, 500);
     }
   };
