@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Body from "../components/body";
 import Usluge from "../components/body/usluge.component";
 import Carousel2 from "../components/carousel2";
+import VrstePaketa from "../components/VrstePaketa";
 export default function Home() {
   return (
     <>
@@ -38,14 +39,19 @@ export default function Home() {
         <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
       </div>
 
-      <div className="w-full bg-backlinear">
+      <div className="w-full bg-backlinear mb-8">
         <div className="flex flex-grow flex-col relative -mt-40 max-w-[1200px] w-full mx-auto ">
-          <div className="mt-20 mb-20">
+          <div className="mt-20 mb-40">
             <Carousel2 />
           </div>
-          
         </div>
       </div>
+      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 -mt-28 -bottom-16  z-10"></div>
+
+      <div className="flex flex-grow flex-col relative bg-mainlight  ">
+        <VrstePaketa />
+      </div>
+      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
 
       <Footer />
     </>

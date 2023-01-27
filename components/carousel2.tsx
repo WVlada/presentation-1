@@ -47,51 +47,42 @@ export default function Carousel2() {
   const [currentPic2, setCurrentPic2] = useState(0);
 
   const [arrayOfTimers, setArrayOfTimers] = useState([]);
-  //console.log(arrayOfTimers)
-  //const [disappear, setDisapear] = useState(" ");
+  
 
   useEffect(() => {
-    //let t = timer
     const timer = setTimeout(() => {
       if (currentPic >= item.images.length - 1) {
         setCurrentPic(0);
-        setCurrentClass(styles.animate_out);
         setCurrentClass2(styles.animate_out);
         setCurrentClass3(styles.animate_out);
         setCurrentClass4(styles.animate_out);
         setTimeout(() => {
           setCurrentPic2(0);
-          setCurrentClass(styles.animate_in);
           setCurrentClass2(styles.animate_in2);
           setCurrentClass3(styles.animate_in3);
           setCurrentClass4(styles.animate_in4);
         }, 500);
       } else {
         setCurrentPic(currentPic + 1);
-        setCurrentClass(styles.animate_out);
         setCurrentClass2(styles.animate_out);
         setCurrentClass3(styles.animate_out);
         setCurrentClass4(styles.animate_out);
         setTimeout(() => {
           setCurrentPic2(currentPic + 1);
-          setCurrentClass(styles.animate_in);
           setCurrentClass2(styles.animate_in2);
           setCurrentClass3(styles.animate_in3);
           setCurrentClass4(styles.animate_in4);
         }, 500);
       }
     }, 5000);
-    //console.log(arrayOfTimers)
     arrayOfTimers.map((arr) => {
       console.log(arr);
       clearTimeout(arr);
     });
     setArrayOfTimers([timer]);
-    //console.log(currentPic);
     return () => clearTimeout(timer);
   }, [currentPic]);
 
-  const [curentClass, setCurrentClass] = useState(styles.animate_in);
   const [curentClass2, setCurrentClass2] = useState(styles.animate_in2);
   const [curentClass3, setCurrentClass3] = useState(styles.animate_in3);
   const [curentClass4, setCurrentClass4] = useState(styles.animate_in4);
@@ -99,15 +90,12 @@ export default function Carousel2() {
   useEffect(() => {}, [currentPic]);
   const handleClick = (e) => {
     if (+e != currentPic) {
-      //clearTimeout(timer);
       setCurrentPic(+e);
-      setCurrentClass(styles.animate_out);
       setCurrentClass2(styles.animate_out);
       setCurrentClass3(styles.animate_out);
       setCurrentClass4(styles.animate_out);
       setTimeout(() => {
         setCurrentPic2(+e);
-        setCurrentClass(styles.animate_in);
         setCurrentClass2(styles.animate_in2);
         setCurrentClass3(styles.animate_in3);
         setCurrentClass4(styles.animate_in4);
@@ -115,13 +103,7 @@ export default function Carousel2() {
     }
   };
 
-  //const classname = item.images[currentPic] + " " //+ disappear;
-  const classnameShow = " animate-carousel2 ";
-  const classnameHide =
-    "opacity-0 transition-all duration-700 -translate-y-10 ";
-
-  const classname2 = "flex opacity-100 justify-center";
-
+  
   return (
     <div className={"w-full flex flex-col mt-40 text-white px-10 lg:px-20  "}>
       <div className={"relative flex lg:flex-row flex-col overflow-hidden "}>
@@ -131,8 +113,6 @@ export default function Carousel2() {
               key={index}
               className={
                 "justify-left lg:w-1/2 mb-10 md:mb-0 flex flex-col bg-opacity-20 cursor-pointer "
-                //+ curentClass
-                //classnameShow
               }
             >
               <div className={"text-4xl font-bold " + curentClass2}>
@@ -158,8 +138,6 @@ export default function Carousel2() {
                 src={src}
                 fill
                 style={{ objectFit: "contain" }}
-                //width={426}
-                //height={240}
                 alt="laptop image"
                 className={
                   "absolute object-bottom " +
