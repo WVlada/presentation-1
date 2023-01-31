@@ -36,9 +36,9 @@ export default function VrstePaketa() {
           Za više informacija kontaktirajte nas!
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 content-center">
         {paketi.map((paket) => {
-          return <PaketCard key={paket.title} {...paket} />;
+          return <PaketCard key={paket.title} paket={paket} />;
         })}
       </div>
       <div></div>
