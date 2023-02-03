@@ -1,8 +1,30 @@
-.cardfadefromleft {
-    animation: fadefromleft .5s forwards;
+.cardfadefromleft:hover {
+    animation: fadeBorderfromleft 1s forwards;
+    border-color: #A1CAC0;
+    border-style: solid;
+}
+.cardfadefromleft:hover  > div:first-child {
+    animation: fadefromleft .3s forwards;
+    background-color: rgb(241, 241, 241);
+    height: 100%;
 }
 @keyframes fadefromleft {
-    0%   {width: 0; opacity: 0;}
+    0%  {width: 100%;   opacity: 0;}
    100% {width: 100%; opacity: 1}
-   }
-
+}
+   @keyframes fadeBorderfromleft {
+0% { 
+        border-left-width: 2px;
+}
+100% {
+    border-left-width: 4px;
+}
+}
+.crown {
+    border-radius: 0 0 50% 50%;
+}
+.cardHover:hover .borderHover {
+    border-color:#55A2BE;
+    border-style: solid;
+    border-bottom-width: 1px;
+}
