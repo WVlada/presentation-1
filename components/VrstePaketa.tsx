@@ -8,21 +8,24 @@ export default function VrstePaketa() {
       title: "basic",
       perks: ["Tri korisnička naloga", "Neograničen broj pacijenata", "Neograničen broj kartona", "Neograničeno zakazivanje termina", "Kreiranje anamneze", "Virtuelni račun", "Otpremanje RTG snimaka", "Višejezična aplikacija"],
       pic: "",
-      primary: false
+      primary: false,
+      style: "left"
     },
     {
       image: "/mylogo.svg",
       title: "professional",
       perks: ["Pet korisnička naloga", "Sve što sadrži Basic paket", "Finansije i štampanje izveštaja", "Uvid u sva dugovanja pacijenata", "Kreiranje liste zadataka", "Sistem notifikacija", "Upravljanje korisničkim nalozima", "Puno manjih opcija"],
       pic: "",
-      primary: true
+      primary: true,
+      style: "bottom"
     },
     {
       image: "/mylogo.svg",
       title: "enterprise",
       perks: ["Uskoro u ponudi"],
       pic: "",
-      primary: false
+      primary: false,
+      style: "right"
     },
   ];
   return (

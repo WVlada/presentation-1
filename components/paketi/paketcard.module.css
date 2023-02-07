@@ -28,3 +28,25 @@
     border-style: solid;
     border-bottom-width: 1px;
 }
+
+.cardLoadFromLeft {
+    animation: loadfromleft 1s forwards;
+}
+@keyframes loadfromleft {
+    0%  {transform: translateX(-200px);   opacity: 0;}
+   100% {transform: translateX(0); opacity: 1}
+}
+.cardLoadFromBottom {
+    animation: loadfrombottom 1s forwards;
+}
+@keyframes loadfrombottom {
+    0%  {transform: translateY(200px);   opacity: 0;}
+   100% {transform: translateY(0); opacity: 1}
+}
+.cardLoadFromRight {
+    animation: loadfromright 1s forwards;
+}
+@keyframes loadfromright {
+    0%  {transform: translateX(200px);   opacity: 0;}
+   100% {transform: translateX(0); opacity: 1}
+}
