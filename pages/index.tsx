@@ -6,6 +6,7 @@ import Body from "../components/body";
 import Usluge from "../components/body/usluge.component";
 import Carousel2 from "../components/carousel2";
 import VrstePaketa from "../components/VrstePaketa";
+import Klijenti from "../components/klijenti";
 export default function Home() {
   return (
     <>
@@ -48,11 +49,18 @@ export default function Home() {
       </div>
       <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 -mt-28 -bottom-16  z-10"></div>
 
-      <div className="flex flex-grow flex-col relative bg-mainlight  ">
+      <div className="flex flex-grow flex-col relative bg-mainlight ">
         <VrstePaketa />
       </div>
-      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+      <div className="flex flex-grow flex-col relative bg-mainlight h-24 "></div>
 
+      <div className="flex flex-grow flex-col relative ">
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10   z-10 -mt-20 "></div>
+        <Klijenti />
+          <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10   z-10"></div>
+      </div>
+
+      
       <Footer />
     </>
   );

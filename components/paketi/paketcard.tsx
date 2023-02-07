@@ -10,31 +10,47 @@ interface Paket {
     perks: string[];
     pic: string;
     primary: boolean;
-    style: string
+    style: string;
   };
 }
 export default function PaketCard({ paket }: Paket) {
   let stylesArr = {
-    "left": styles.cardLoadFromLeft + " mt-20",
-    "bottom": styles.cardLoadFromBottom+ " mt-10",
-    "right": styles.cardLoadFromRight+ " mt-20"
-  }
+    left: styles.cardLoadFromLeft + " mt-20",
+    bottom: styles.cardLoadFromBottom + " mt-10",
+    right: styles.cardLoadFromRight + " mt-20",
+  };
   const [someClass, setSomeClass] = useState("");
-  let classname = stylesArr[paket.style]
+  let classname = stylesArr[paket.style];
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          //let classname = stylesArr[paket.style]
           setSomeClass(classname);
-        }else{
-          setSomeClass(" ")
-        }
+        } //else{
+        //setSomeClass(" ")
+        //}
       });
     });
     observer.observe(document.querySelector(".paketcard"));
   });
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          setSomeClass(" ");
+        }
+      });
+    });
+    observer.observe(document.querySelector(".paketgrid"));
+  });
   return (
-    <div className={"paketcard flex flex-col justify-center text-footertextcolor w-full self-start " + someClass}>
+    <div
+      className={
+        "paketcard flex flex-col justify-center text-footertextcolor w-full self-start " +
+        someClass
+      }
+    >
       <div className="bg-main mx-auto rounded text-center h-60 p-4 transition-transform md:w-48 shadow cursor-pointer drop-shadow-[0_10px_5px_rgba(0,0,0,0.35)] hover:scale-110">
         <p className="text-center text-maindark">{paket.title}</p>
         <div className="text-center mt-10">
