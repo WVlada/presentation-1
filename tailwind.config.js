@@ -8,8 +8,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'backlinear': "linear-gradient(45deg,#73aeaa 0%,#A6D8BE 100%)",
-        'backlinearimage': `url("/images/accountinglarge.jpg"), linear-gradient(45deg,#73aeaa 0%, #A6D8BE 100%)`
-     },
+        'backlinearimage2': `linear-gradient(45deg,#A6D8BEcf 0%, #73aeaacf 100%), url("/images/accountinglarge.jpg")`,
+        'backlinearimage': `url("/images/accountinglarge.jpg")`
+      },
       colors: {
         main: "#A1CAC0",
         maindark: "#73aeaa",

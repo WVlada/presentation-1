@@ -21,10 +21,6 @@ export default function Home() {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <main className="flex flex-col justify-center min-h-screen bg-backlinear w-full ">
         <Header />
