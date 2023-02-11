@@ -9,14 +9,17 @@ const Header = () => {
   const handleArrowClick = () => {
     document.getElementById("logo")?.scrollIntoView({ behavior: "smooth" });
   };
-  const [bgState, useBg] = useState(false)
+  const [bgState, useBg] = useState(false);
   useEffect(() => {
-    console.log(window.pageYOffset);
     //useBg(true)
   }, []);
-  let bg = bgState ? " bg-main" : " bg-none"
+  let bg = bgState ? " bg-main" : " bg-none";
   return (
-    <div className={"flex text-white justify-between max-w-[1200px] mx-auto w-full " + bg}>
+    <div
+      className={
+        "flex text-white justify-between max-w-[1200px] mx-auto w-full " + bg
+      }
+    >
       {inView && (
         <div
           onClick={handleArrowClick}
@@ -39,14 +42,17 @@ const Header = () => {
       <div className="flex flex-row justify-between w-full px-20">
         <div className="flex items-center">
           <div className="w-32 ">
-            <Image
-              id="logo"
-              ref={ref}
-              src="/mylogo.svg"
-              alt="logo image"
-              height={20}
-              width={88}
-            />
+            {
+              <Image
+                id="logo"
+                ref={ref}
+                src="/mylogo.svg"
+                alt="logo image"
+                //style={{ height: "auto", width: "auto" }}
+                height={80}
+                width={88}
+              />
+            }
           </div>
         </div>
 

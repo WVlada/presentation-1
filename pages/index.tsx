@@ -27,33 +27,33 @@ export default function Home() {
 
         <Body />
       </main>
-      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 absolute -bottom-16  z-10"></div>
       <div className="w-full bg-mainlight">
         <Usluge />
       </div>
 
       <div className="flex flex-grow flex-col relative mb-48 ">
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 absolute -bottom-16  z-10"></div>
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 absolute -bottom-16  z-10"></div>
       </div>
 
       <div className="w-full bg-backlinear mb-8">
         <div className="flex flex-grow flex-col relative -mt-40 max-w-[1200px] w-full mx-auto ">
-          <div className="mt-20 mb-40">
+          <div className="mt-20 mb-40 h-screen flex flex-col justify-center">
             <Carousel2 />
           </div>
         </div>
       </div>
-      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10 -mt-28 -bottom-16  z-10"></div>
+      <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 -mt-28 -bottom-16  z-10"></div>
 
-      <div className="flex flex-grow flex-col relative bg-mainlight ">
+      <div className="flex flex-grow flex-col relative bg-mainlight justify-center items-center ">
         <VrstePaketa />
       </div>
       <div className="flex flex-grow flex-col relative bg-mainlight h-24 "></div>
 
       <div className="flex flex-grow flex-col relative ">
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10   z-10 -mt-20 "></div>
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 -mt-20 "></div>
         <Klijenti />
-          <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] -ml-10   z-10"></div>
+          <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10"></div>
       </div>
 
       
