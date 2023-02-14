@@ -47,6 +47,7 @@ export default function Carousel() {
             <Image
               key={src}
               src={src}
+              sizes={'xl'}
               //width={426}
               //height={240}
               style={{ objectFit: "contain" }}

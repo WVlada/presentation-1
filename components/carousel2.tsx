@@ -76,7 +76,6 @@ export default function Carousel2() {
       }
     }, 5000);
     arrayOfTimers.map((arr) => {
-      console.log(arr);
       clearTimeout(arr);
     });
     setArrayOfTimers([timer]);
@@ -137,6 +136,8 @@ export default function Carousel2() {
                 key={src}
                 src={src}
                 fill
+                sizes="xl"
+                priority
                 style={{ objectFit: "contain" }}
                 alt="laptop image"
                 className={

@@ -29,7 +29,7 @@ export default function VrstePaketa() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center text-footertextcolor -mt-10 bg-mainlight">
+    <div className="flex flex-col justify-center items-center max-w-[1200px] text-footertextcolor -mt-10 bg-mainlight">
       <div>
         <p className="text-3xl font-bold mb-5 text-center ">VRSTE PAKETA</p>
         <div className="text-center">

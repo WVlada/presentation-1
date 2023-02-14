@@ -57,7 +57,7 @@ export default function PaketCard({ paket }: Paket) {
           <Image
             className="inline"
             src={paket.image}
-            width="80"
+            width='80'
             height="80"
             alt="logo"
           />
