@@ -17,8 +17,6 @@ const Accordion = ({ pitanja }: Pitanja) => {
       setActive(number);
     }
   };
-  console.log(active);
-  let activeClass = " h-32";
   return (
     <div className="">
       {pitanja.map((p, index) => {
@@ -31,7 +29,12 @@ const Accordion = ({ pitanja }: Pitanja) => {
             className="border-b cursor-pointer p-4 pl-0 "
           >
             <div className="flex flex-row justify-between items-center h-16">
-              <p className="text-center text-3xl  text-footertextcolor p-4 pl-0">
+              <p
+                className={
+                  "text-left text-3xl   p-4 pl-0" +
+                  (index == active ? " text-main " : " text-footertextcolor  ")
+                }
+              >
                 {p.pitanje}
               </p>
               <div className="flex items-center">
@@ -55,7 +58,11 @@ const Accordion = ({ pitanja }: Pitanja) => {
               <div>
                 {p.points &&
                   p.points.map((point, index) => {
-                    return <li key={index}>{point}</li>;
+                    return (
+                      <li className="ml-5" key={index}>
+                        {point}
+                      </li>
+                    );
                   })}
               </div>
             </div>

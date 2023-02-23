@@ -17,4 +17,13 @@ body {
 
 ::selection {
   background: rgb(161 202 192 );
+  color: #fff
+}
+::-webkit-scrollbar {
+  width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #A1CAC0;
 }
