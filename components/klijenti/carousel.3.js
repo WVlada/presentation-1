@@ -7,18 +7,18 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Carousel3() {
-  let texts: [
+  let texts = [
     {
-      text: "instant pretraga po svim podacima";
+      text: "instant pretraga po svim podacima"
     },
     {
-      text: "obeležavanje neplaćenih";
+      text: "obeležavanje neplaćenih"
     },
     {
-      text: "pregled mesečni, nedeljni i dnevni";
+      text: "pregled mesečni, nedeljni i dnevni"
     },
     {
-      text: "izveštaj svih troškova ordinacije";
+      text: "izveštaj svih troškova ordinacije"
     }
   ];
 

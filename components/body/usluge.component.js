@@ -48,11 +48,11 @@ export default function Usluge() {
   return (
     <div
       className={
-        "md:p-10 mx-auto -mt-20  w-full text-center relative max-w-[1200px] w-full  bg-mainlight text-footertextcolor z-50 "
+        "md:p-10 mx-auto -mt-20  w-full text-center relative max-w-[1200px] w-full  bg-mainlight text-footertextcolor z-20 "
       }
     >
       <div className="mt-5">
-        <p className="text-3xl font-bold mb-5 ">USLUGE APLIKACIJE</p>
+        <p id="usluge" className="text-3xl font-bold mb-5 ">USLUGE APLIKACIJE</p>
         <span className="">
           <FontAwesomeIcon icon={faUsersLine} />
         </span>

@@ -47,10 +47,10 @@ const Pitanja = () => {
   ];
 
   return (
-    <div className="flex flex-grow flex-col  w-full mx-auto  min-h-screen -mt-10">
+    <div  className="flex flex-grow flex-col bg-mainlight w-full mx-auto  min-h-screen -mt-32 z-40">
       <div className=" w-full h-full px-10 bg-mainlight bg-opacity-90 h-screen flex justify-center">
         <div className="max-w-[1200px] mt-20 ">
-          <p className="text-center text-3xl uppercase text-footertextcolor">
+          <p id="faq" className="text-center text-3xl uppercase text-footertextcolor">
             Česta pitanja
           </p>
           <div className="mt-10 mb-10">

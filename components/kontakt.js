@@ -18,7 +18,7 @@ const Kontakt = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2 flex items-center px-10">
+          <div id={"contact"} className="md:w-1/2 flex items-center px-10">
             <KontakForm />
           </div>
         </div>

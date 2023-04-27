@@ -35,7 +35,7 @@ export default function Carousel() {
   //const classname = item.images[currentPic] + " " //+ disappear;
   const classname = "flex opacity-100 justify-center";
   return (
-    <div className={" flex flex-col min-w-[500px] w-[1200px] "}>
+    <div id="pocetna" className={" flex flex-col min-w-[500px] w-[1200px] "}>
       <div
         className={
           "relative h-[300px] flex items-center  " +

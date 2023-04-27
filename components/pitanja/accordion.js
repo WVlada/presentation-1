@@ -1,16 +1,8 @@
 import { useState } from "react";
 
-interface Pitanja {
-  pitanja: Pitanje[];
-}
-type Pitanje = {
-  pitanje: String;
-  odgovor: String;
-  points: String[];
-};
-const Accordion = ({ pitanja }: Pitanja) => {
-  let [active, setActive] = useState<Number | undefined>();
-  const handleClick = (number: Number) => {
+const Accordion = ({ pitanja }) => {
+  let [active, setActive] = useState();
+  const handleClick = (number) => {
     if (number == active) {
       setActive(10);
     } else {

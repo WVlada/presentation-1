@@ -1,0 +1,13 @@
+.kontakt_forma {
+    animation: flyfromright 0.8s ease-out forwards;
+    
+}@keyframes flyfromright {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+    }

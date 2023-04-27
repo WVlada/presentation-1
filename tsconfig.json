@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js", "components/pitanja/accordion.js", "components/paketi/paketcard.js", "components/klijenti/carousel.3.js", "components/body/card.comonent.js", "components/body/carousel.component.js", "components/body/section.component.js", "components/body/usluge.component.js", "components/carousel2.js", "pages/_app.tsx", "pages/_document.js", "pages/api/sendemail.js", "components/VrstePaketa.js", "components/body.js", "components/footer.js", "components/pitanja.js", "components/kontakt.js", "components/klijenti.js", "components/header.js"],
   "exclude": ["node_modules"]
 }

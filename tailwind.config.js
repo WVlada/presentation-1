@@ -21,13 +21,13 @@ module.exports = {
         tertiary: "#2f60c3"
       },
       keyframes: {
-        carousel2: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        }
+        //carousel2: {
+        //  '0%, 100%': { transform: 'rotate(-3deg)' },
+        //  '50%': { transform: 'rotate(3deg)' },
+        //}
       },
       animation: {
-        carousel2: 'carousel2 1s ease-in-out infinite',
+      //  carousel2: 'carousel2 1s ease-in-out infinite',
       }
     },
   },

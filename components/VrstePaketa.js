@@ -4,7 +4,7 @@ import PaketCard from "./paketi/paketcard";
 export default function VrstePaketa() {
   let paketi = [
     {
-      image: "/mylogo.svg",
+      image: "/images/logoNoBlur.svg",
       title: "basic",
       perks: ["Tri korisnička naloga", "Neograničen broj pacijenata", "Neograničen broj kartona", "Neograničeno zakazivanje termina", "Kreiranje anamneze", "Virtuelni račun", "Otpremanje RTG snimaka", "Višejezična aplikacija"],
       pic: "",
@@ -12,7 +12,7 @@ export default function VrstePaketa() {
       style: "left"
     },
     {
-      image: "/mylogo.svg",
+      image: "/images/logoNoBlur.svg",
       title: "professional",
       perks: ["Pet korisnička naloga", "Sve što sadrži Basic paket", "Finansije i štampanje izveštaja", "Uvid u sva dugovanja pacijenata", "Kreiranje liste zadataka", "Sistem notifikacija", "Upravljanje korisničkim nalozima", "Puno manjih opcija"],
       pic: "",
@@ -20,7 +20,7 @@ export default function VrstePaketa() {
       style: "bottom"
     },
     {
-      image: "/mylogo.svg",
+      image: "/images/logoNoBlur.svg",
       title: "enterprise",
       perks: ["Uskoro u ponudi"],
       pic: "",
@@ -29,13 +29,13 @@ export default function VrstePaketa() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center max-w-[1200px] text-footertextcolor -mt-10 bg-mainlight">
+    <div  className="flex flex-col justify-center items-center max-w-[1200px] text-footertextcolor  bg-mainlight">
       <div>
-        <p className="text-3xl font-bold mb-5 text-center ">VRSTE PAKETA</p>
+        <p  className="text-3xl font-bold mb-5 text-center z-20 ">VRSTE PAKETA</p>
         <div className="text-center">
           <FontAwesomeIcon icon={faUsersLine} />
         </div>
-        <p className="w-50 text-lg mt-5 text-center">
+        <p id="paketi" className="w-50 text-lg mt-5 text-center">
           Aplikacija nudi izbor paketa prema potrebama biznisa.
         </p>
         <p className="w-50 text-lg text-center">

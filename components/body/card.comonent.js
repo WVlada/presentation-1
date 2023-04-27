@@ -8,15 +8,9 @@ import {} from "@fortawesome/free-solid-svg-icons";
 import { type } from "os";
 import styles from "./card.module.css";
 
-interface CardType {
-  text: string;
-  title: string;
-  image: string;
-  index: number;
-  flag: boolean
-}
 
-export default function Card({ text, title, image, index, flag }: CardType) {
+
+export default function Card({ text, title, image, index, flag }) {
   let classname = " ";
   switch (index) {
     case 0:

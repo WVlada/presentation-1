@@ -8,7 +8,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 config.autoAddCss = false;
 const Footer = () => {
   return (
-    <div className="bg-mainlight pt-20 pb-20  flex flex-col justify-center text-sm text-footertextcolor font-normal ">
+    <div className="bg-mainlight pt-10 pb-10  flex flex-col justify-center text-sm text-footertextcolor font-normal w-full -mt-28 z-40 ">
       <div className="pt-5 text-center">
         <FontAwesomeIcon size="lg" color={"#337ab7"} icon={faFacebookF} />
         <FontAwesomeIcon
@@ -20,12 +20,12 @@ const Footer = () => {
       </div>
       <div className="pt-5">
         <p className="text-center">
-          Copyright © 2022 by me. All Rights Reserved.
+          Copyright © 2022 by Office Soft doo. All Rights Reserved.
         </p>
       </div>
       <div className="pt-5">
         <p className="text-center ">
-          Hand-crafted & made with heart{" "}
+          Hand-crafted & made with {" "}
           <FontAwesomeIcon
             size="lg"
             color={"#e75040"}

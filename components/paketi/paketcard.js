@@ -3,17 +3,8 @@ import { faCrown } from "@fortawesome/free-solid-svg-icons";
 import styles from "./paketcard.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-interface Paket {
-  paket: {
-    image: string;
-    title: string;
-    perks: string[];
-    pic: string;
-    primary: boolean;
-    style: string;
-  };
-}
-export default function PaketCard({ paket }: Paket) {
+
+export default function PaketCard({ paket }) {
   let stylesArr = {
     left: styles.cardLoadFromLeft + " mt-20",
     bottom: styles.cardLoadFromBottom + " mt-10",
@@ -57,8 +48,8 @@ export default function PaketCard({ paket }: Paket) {
           <Image
             className="inline"
             src={paket.image}
-            width='80'
-            height="80"
+            width='50'
+            height="50"
             alt="logo"
           />
         </div>

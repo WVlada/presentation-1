@@ -1,0 +1,20 @@
+.animateheader{
+    /*animation: headeranimation 2 ease-in-out forwards;*/
+    /*position: "fixed";*/
+}
+@keyframes headeranimation {
+    0%{
+        position: "fixed";
+        top: "0px";
+        left: "0px";
+        box-shadow: rgb(230, 228, 230);
+        /*background-color: transparent;*/
+    }
+    100%{
+        position: "fixed";
+        top: "10px";
+        left: "0px";
+        box-shadow: rgb(230, 228, 230);
+        /*background-color: aquamarine;*/
+    }
+}
