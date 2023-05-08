@@ -20,10 +20,23 @@ body {
   color: #fff
 }
 ::-webkit-scrollbar {
-  width: 8px;
-    height: 8px;
+  width: 10px;
+  height: 36px;
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
   background: #A1CAC0;
 }
+
+/*.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  max-height: 40px;
+}*/

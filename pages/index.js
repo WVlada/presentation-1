@@ -26,7 +26,9 @@ export default function Home() {
       </Head>
       <main className="flex flex-col items-center justify-center bg-backlinear w-full ">
         <Header />
+        
         <div className=" w-full bg-backlinear">
+          
           <Body />
         </div>
 
