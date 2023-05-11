@@ -93,7 +93,7 @@ const Header = () => {
           //someClass
         }
       >
-        <div className="flex flex-row justify-between max-w-[1200px] w-full px-20 md:px-auto">
+        <div className="flex flex-row justify-between max-w-[1200px] w-full px-10 sm:px-20 md:px-auto">
           <div className="flex items-center">
             <Link href="/">
               <div className="w-44 ">

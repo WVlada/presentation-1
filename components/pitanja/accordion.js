@@ -23,7 +23,7 @@ const Accordion = ({ pitanja }) => {
             <div className="flex flex-row justify-between items-center h-16">
               <p
                 className={
-                  "text-left text-3xl   p-4 pl-0" +
+                  "text-left text-md md:text-3xl   p-4 pl-0" +
                   (index == active ? " text-main " : " text-footertextcolor  ")
                 }
               >
@@ -46,8 +46,8 @@ const Accordion = ({ pitanja }) => {
                   : " text-footertextcolor max-h-0 ease-out ")
               }
             >
-              <p className="">{p.odgovor}</p>
-              <div>
+              <p className="text-xs md:text-2xl">{p.odgovor}</p>
+              <div className="text-xs md:text-2xl">
                 {p.points &&
                   p.points.map((point, index) => {
                     return (

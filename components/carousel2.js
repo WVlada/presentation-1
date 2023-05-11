@@ -104,7 +104,7 @@ export default function Carousel2() {
 
   
   return (
-    <div  className={"w-full flex flex-col mt-40 text-white px-10 lg:px-20  "}>
+    <div  className={"w-full flex flex-col mt-0 md:mt-40 text-white px-10 lg:px-20  "}>
       <div className={"relative flex lg:flex-row flex-col overflow-hidden "}>
         {item.texts.map((tex, index) =>
           index == currentPic2 ? (
@@ -114,10 +114,10 @@ export default function Carousel2() {
                 "justify-left lg:w-1/2 mb-10 md:mb-0 flex flex-col bg-opacity-20 cursor-pointer "
               }
             >
-              <div className={"text-4xl font-bold " + curentClass2}>
+              <div className={"text-2xl md:text-4xl font-bold " + curentClass2}>
                 {tex.header}
               </div>
-              <div className={"mt-8 text-sm h-16 " + curentClass3}>
+              <div className={"mt-8 text-sm h-24 " + curentClass3}>
                 {tex.text}
               </div>
               <div id="istaknuto" className={"mt-8 flex flex-grow items-end lg:items-center " + curentClass4}>
@@ -129,14 +129,14 @@ export default function Carousel2() {
           ) : null
         )}
 
-        <div id="carousel2" className="flex lg:w-1/2 relative h-80 justify-center items-end md:mt-10 lg:mt-0 flex-grow mb-0 ">
+        <div id="carousel2" className="flex lg:w-1/2 relative h-52 md:h-80 justify-center items-end md:mt-0 lg:mt-0 flex-grow mb-0 ">
           {item.images.map((src, index) => {
             return (
               <Image
                 key={src}
                 src={src}
                 fill
-                sizes="xl"
+                //sizes="xl"
                 priority
                 style={{ objectFit: "contain" }}
                 alt="laptop image"
@@ -160,12 +160,12 @@ export default function Carousel2() {
                 handleClick(e.currentTarget.id);
               }}
               className={
-                "w-1/4 border-t-2 cursor-pointer text-left mt-4 px-4 h-28 " +
+                "w-1/4 border-t-2 cursor-pointer text-left mt-4 px:0 sm:px-4 h-28 " +
                 (index == currentPic ? "" : " border-t-0 ")
               }
             >
-              <p className="text-md font-bold mt-2">{item.header2}</p>
-              <p className="text-sm mt-3">{item.text2}</p>
+              <p className="text-xs md:text-md font-bold mt-2">{item.header2}</p>
+              <p className="text-xs md:text-sm mt-3">{item.text2}</p>
             </div>
           );
         })}

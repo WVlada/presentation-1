@@ -24,15 +24,14 @@ export default function Home() {
           crossOrigin="true"
         />
       </Head>
-      <main className="flex flex-col items-center justify-center bg-backlinear w-full ">
+      <main className="flex flex-col items-center justify-center w-full ">
         <Header />
         
         <div className=" w-full bg-backlinear">
-          
           <Body />
         </div>
 
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 -mt-14 -mb-14  z-10"></div>
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 -mt-14 -mb-14 z-10"></div>
         <div className="w-full bg-mainlight">
           <Usluge />
         </div>
@@ -42,9 +41,9 @@ export default function Home() {
   </div>*/}
         <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 -mt-28 -bottom-16  z-10"></div>
 
-        <div className="w-full bg-backlinear mb-8 -mt-12">
-          <div className="flex flex-grow flex-col relative -mt-40 max-w-[1200px] w-full mx-auto ">
-            <div className="mt-20 mb-40 h-screen flex flex-col justify-center">
+        <div className="w-full bg-backlinear sm:mb-20 -mt-12">
+          <div className="flex flex-grow flex-col relative  max-w-[1200px] w-full mx-auto ">
+            <div className="mt-40 sm:mt-20 mb-48 sm:mb-20 h-screen flex flex-col justify-center">
               <Carousel2 />
             </div>
           </div>

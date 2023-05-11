@@ -40,7 +40,7 @@ export default function Carousel3() {
       >
         {
           <div key="slide1 relative">
-            <p className="text-black text-center font-[Parisienne] text-3xl">
+            <p className="text-black text-center font-[Parisienne] text-sm md:text-3xl">
               <FontAwesomeIcon
                 color="#ffffff"
                 size="2x"
@@ -65,7 +65,7 @@ export default function Carousel3() {
         }
 
         <div key="slide2">
-          <p className="text-black text-center font-[Parisienne] text-3xl">
+          <p className="text-black text-center font-[Parisienne] text-sm md:text-3xl">
             <FontAwesomeIcon
               color="#ffffff"
               size="2x"
