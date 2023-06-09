@@ -48,7 +48,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 -mt-28 -bottom-16  z-4"></div>
+        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 -mt-32 -bottom-16  z-4"></div>
 
         <div className="flex flex-grow flex-col relative bg-mainlight w-full justify-center items-center -mt-14 ">
           <VrstePaketa />

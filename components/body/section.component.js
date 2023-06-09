@@ -6,6 +6,11 @@ const Section = () => {
     //document.getElementById("top")?.scrollIntoView({ behavior: "smooth" });
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
+  const handleUslugeClick = () => {
+    document
+      .getElementById("usluge")
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   return (
     <div className="flex flex-row w-full ">
       {/*<div className="md:flex hidden md:w-1/12 ">
@@ -42,6 +47,7 @@ const Section = () => {
           <button
             id="prvi_button"
             type="button"
+            onClick={handleUslugeClick}
             className="text-sm transition-colors duration-700 hover:bg-tertiary hover:text-white text-center text-secondary bg-white py-2 px-6 rounded-full"
           >
             Vidi više

@@ -16,7 +16,8 @@ body {
 }
 
 ::selection {
-  background: rgb(161 202 192 );
+  /*background: rgb(161 202 192 );*/
+  background: #afc4d1;
   color: #fff
 }
 ::-webkit-scrollbar {
@@ -25,7 +26,8 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #A1CAC0;
+  /*background: #A1CAC0;*/
+  background: #0f2634;
 }
 
 /*.menu {

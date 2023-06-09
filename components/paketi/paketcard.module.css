@@ -1,11 +1,12 @@
 .cardfadefromleft:hover {
     animation: fadeBorderfromleft 1s forwards;
-    border-color: #A1CAC0;
+    border-color: #0f2634;
     border-style: solid;
+    
 }
 .cardfadefromleft:hover  > div:first-child {
     animation: fadefromleft .3s forwards;
-    background-color: rgb(241, 241, 241);
+    background-color:#afc4d1;
     height: 100%;
 }
 @keyframes fadefromleft {
@@ -24,7 +25,7 @@
     border-radius: 0 0 50% 50%;
 }
 .cardHover:hover .borderHover {
-    border-color:#55A2BE;
+    border-color:#0f2634;
     border-style: solid;
     border-bottom-width: 1px;
 }

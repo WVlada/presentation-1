@@ -50,7 +50,7 @@ export default function Card({ text, title, image, index, flag }) {
         someClass
       }
     >
-      {flag && <div className="absolute bg-maindark -right-8 rotate-45 top-6 drop-shadow-lg">
+      {flag && <div className="absolute bg-main -right-8 rotate-45 top-6 drop-shadow-lg">
         <p className="text-white text-xs py-2 px-8 font-bold">Neograničeno</p>
       </div>}
 
@@ -67,7 +67,7 @@ export default function Card({ text, title, image, index, flag }) {
       </div>
       <div>
         <p className="text-xl font-bold mt-4">{title}</p>
-        <p className="text-sm mt-4">{text}</p>
+        <p className="text-sm mt-4 text-main">{text}</p>
       </div>
     </div>
   );

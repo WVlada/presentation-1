@@ -43,7 +43,7 @@ export default function PaketCard({ paket }) {
       }
     >
       <div className="bg-main mx-auto rounded text-center h-60 p-4 transition-transform md:w-48 shadow cursor-pointer drop-shadow-[0_10px_5px_rgba(0,0,0,0.35)] hover:scale-110">
-        <p className="text-center text-maindark">{paket.title}</p>
+        <p className="text-center text-white">{paket.title}</p>
         <div className="text-center mt-10">
           <Image
             className="inline"
@@ -66,13 +66,13 @@ export default function PaketCard({ paket }) {
       >
         <div className="flex flex-row justify-center">
           {paket.primary && (
-            <div className={"-mt-6 bg-[#55A2BE] h-8 w-24 " + styles.crown}>
+            <div className={"-mt-6 bg-main h-8 w-24 " + styles.crown}>
               <FontAwesomeIcon color="white" icon={faCrown} />
             </div>
           )}
         </div>
         <div className="mb-10 mt-10">
-          <p className="uppercase text-2xl font-bold"> {paket.title}</p>
+          <p className="uppercase text-2xl font-bold text-main"> {paket.title}</p>
         </div>
         <div className={"border-b w-full mb-10 " + styles.borderHover}></div>
         <div className="flex flex-col grow justify-center ">
@@ -86,7 +86,7 @@ export default function PaketCard({ paket }) {
                 key={perk}
               >
                 <div className={"absolute top-0 let-0 z-0 "}></div>
-                <p className="text-md p-2 z-20 relative">{perk}</p>
+                <p className="text-md p-2 z-20 relative text-main">{perk}</p>
               </div>
             );
           })}
@@ -96,7 +96,7 @@ export default function PaketCard({ paket }) {
         <div className={" justify-center "}>
           <button
             type="button"
-            className="mb-5 text-sm transition-colors duration-700 hover:bg-white hover:text-tertiary text-center text-white hover:shadow bg-tertiary py-3 px-7 rounded-full"
+            className="mb-5 text-sm transition-colors duration-700 hover:bg-white hover:text-mainlight text-center hover:shadow bg-tertiary py-3 px-7 rounded-full"
           >
             Kontakt
           </button>

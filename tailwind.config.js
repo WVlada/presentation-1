@@ -7,21 +7,23 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'backlinear2': "linear-gradient(45deg,#657783 0%,#0f2634 100%)",
-        'backlinear1': "linear-gradient(45deg,#657783 0%,#A6D8BE 100%)",
+        'backlinear': "linear-gradient(45deg,#657783 0%,#0f2634 100%)",
+        'backlinear2': "linear-gradient(45deg,#657783 0%,#A6D8BE 100%)",
         'backlinear3': "linear-gradient(45deg,#888e93 0%,#0f2634 100%)",
-        'backlinear': "linear-gradient(45deg,#73aeaa 0%,#A6D8BE 100%)",
-        'backlinearimage2': `linear-gradient(45deg,#A6D8BEcf 0%, #73aeaacf 100%), url("/images/accountinglarge.jpg")`,
+        'backlinear1': "linear-gradient(45deg,#73aeaa 0%,#A6D8BE 100%)",
         'backlinearimage': `url("/images/accountinglarge.jpg")`,
         'backkontaktimage': `url("/images/kontaktlarge.jpg")`
       },
       colors: {
-        main: "#A1CAC0",
-        maindark: "#73aeaa",
-        mainlight: "#f2fefe",
-        footertextcolor: "#515656",
-        secondary: "#138fc2",
-        tertiary: "#2f60c3"
+        //main: "#A1CAC0",
+        main: '#0f2634',
+        //maindark: "#73aeaa",
+        //mainlight: "#f2fefe",
+        mainlight: "#afc4d1",
+        //footertextcolor: "#515656",
+        footertextcolor: "#ffffff",
+        secondary: "#0f2634",
+        tertiary: "#0f2634"
       },
       keyframes: {
         //carousel2: {

@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <div className="bg-mainlight pt-10 pb-10  flex flex-col justify-center text-sm text-footertextcolor font-normal w-full -mt-28 z-40 ">
       <div className="pt-5 text-center">
-        <FontAwesomeIcon size="lg" color={"#337ab7"} icon={faFacebookF} />
+        <FontAwesomeIcon size="lg" color={"#0f2634"} icon={faFacebookF} />
         <FontAwesomeIcon
           className="ml-8"
           size="lg"
-          color={"#337ab7"}
+          color={"#0f2634"}
           icon={faInstagram}
         />
       </div>
@@ -28,7 +28,7 @@ const Footer = () => {
           Hand-crafted & made with {" "}
           <FontAwesomeIcon
             size="lg"
-            color={"#e75040"}
+            color={"#0f2634"}
             className="fa-beat"
             icon={faHeart}
           />

@@ -106,7 +106,7 @@ const Header = () => {
                   height={44}
                   width={44}
                 />
-                <p className="inline ml-2 font-bold text-lg">OFFICE SOFT</p>
+                <p className="inline ml-2 font-bold text-lg">OBRAČUN.RS</p>
               </div>
             </Link>
           </div>
@@ -149,11 +149,11 @@ const Header = () => {
         }
       >
         <div className="h-full flex flex-col w-full fixed top-14 z-[100] ">
-          <div onClick={handleUslugeClick} className="cursor-pointer w-full hover:bg-maindark hover:border h-16 flex justify-center items-center">Usluge</div>
-          <div onClick={handleIstaknutoClick} className="cursor-pointer w-full hover:bg-maindark hover:border h-16 flex justify-center items-center">Istaknuto</div>
-          <div onClick={handlePaketiClick} className="cursor-pointer w-full hover:bg-maindark hover:border h-16 flex justify-center items-center">Paketi</div>
-          <div onClick={handleFAQClick} className="cursor-pointer w-full hover:bg-maindark hover:border h-16 flex justify-center items-center">FAQ</div>
-          <div onClick={handleContactClick} className="cursor-pointer w-full hover:bg-maindark hover:border h-16 flex justify-center items-center">Kontakt</div>
+          <div onClick={handleUslugeClick} className="cursor-pointer w-full hover:bg-mainlight hover:border h-16 flex justify-center items-center">Usluge</div>
+          <div onClick={handleIstaknutoClick} className="cursor-pointer w-full hover:bg-mainlight hover:border h-16 flex justify-center items-center">Istaknuto</div>
+          <div onClick={handlePaketiClick} className="cursor-pointer w-full hover:bg-mainlight hover:border h-16 flex justify-center items-center">Paketi</div>
+          <div onClick={handleFAQClick} className="cursor-pointer w-full hover:bg-mainlight hover:border h-16 flex justify-center items-center">FAQ</div>
+          <div onClick={handleContactClick} className="cursor-pointer w-full hover:bg-mainlight hover:border h-16 flex justify-center items-center">Kontakt</div>
         </div>
       </div>
     </div>

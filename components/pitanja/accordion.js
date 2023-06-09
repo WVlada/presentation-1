@@ -31,7 +31,7 @@ const Accordion = ({ pitanja }) => {
               </p>
               <div className="flex items-center">
                 <div className="">
-                  <p className="text-[#afafaf] text-3xl">
+                  <p className="text-white text-3xl">
                     {index == active ? "-" : "+"}
                   </p>
                 </div>
