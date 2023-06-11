@@ -9,31 +9,31 @@ import Card from "./card.comonent";
 export default function Usluge() {
   let cards = [
     {
-      title: "Kreiranje firme i povezane firme",
+      title: "Obračun zakonske zatezne kamate",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge1.png",
       flag: true,
     },
     {
-      title: "Kreiranje naloga i kontnih planova",
+      title: "Revalorizacija",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge2.png",
       flag: true,
     },
     {
-      title: "Konsolidovanje",
+      title: "Domaća i strana dugovanja/potraživanja",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge3.png",
       flag: true,
     },
     {
-      title: "Finansije",
+      title: "Eskont",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge4.png",
       flag: false,
     },
     {
-      title: "Podesive liste",
+      title: "Redovna kamata",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       image: "/images/usluge5.png",
       flag: false,
@@ -48,7 +48,7 @@ export default function Usluge() {
   return (
     <div
       className={
-        "md:p-10 mx-auto -mt-20  w-full text-center relative max-w-[1200px] w-full  bg-mainlight text-footertextcolor z-20 "
+        "md:p-10 mx-auto -mt-20  w-full text-center relative max-w-[1200px] bg-mainlight text-footertextcolor z-20 "
       }
     >
       <div className="mt-5">
@@ -57,8 +57,7 @@ export default function Usluge() {
           <FontAwesomeIcon icon={faUsersLine} />
         </span>
         <p className="w-50 text-lg mt-5">
-          Aplikacija je razvijena u punoj saradnji sa iskusnim računovođama i
-          kancelarijama sa dugogodišnjom praksom.
+          Aplikacija je razvijena iz višegodišnjeg iskustva u knjigovodstvu, sudskim i stečajnim postupcima.
         </p>
       </div>
 

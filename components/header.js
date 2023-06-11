@@ -10,7 +10,7 @@ const Header = () => {
   const [animate, setAnimateMenu] = useState(false);
   let animateMenu = animate
     ? " h-80 ease-in-out duration-500 transition-all z-50 opacity-100"
-    : " h-0 ease-in-out duration-500 transition-all z-0 opacity-0";
+    : " h-0 ease-in-out duration-500 transition-all z-0 opacity-0 hidden";
   const handlePocetnaClick = () => {
     document
       .getElementById("pocetna")

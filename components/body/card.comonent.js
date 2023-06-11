@@ -46,7 +46,7 @@ export default function Card({ text, title, image, index, flag }) {
   return (
     <div
       className={
-        "flex flex-col p-8 relative h-96 bg-white overflow-hidden drop-shadow-[0_5px_15px_rgba(0,0,0,0.15)] rounded hover:-translate-y-4 animate transition-transform duration-300 ease-in-out card " +
+        "flex flex-col cursor-pointer p-8 relative h-96 bg-white overflow-hidden drop-shadow-[0_5px_15px_rgba(0,0,0,0.15)] rounded hover:-translate-y-4 animate transition-transform duration-300 ease-in-out card " +
         someClass
       }
     >
@@ -66,7 +66,7 @@ export default function Card({ text, title, image, index, flag }) {
         }
       </div>
       <div>
-        <p className="text-xl font-bold mt-4">{title}</p>
+        <p className="text-xl font-bold mt-4 text-mainlight">{title}</p>
         <p className="text-sm mt-4 text-main">{text}</p>
       </div>
     </div>

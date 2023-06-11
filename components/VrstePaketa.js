@@ -6,10 +6,11 @@ export default function VrstePaketa() {
     {
       image: "/images/logoNoBlur.svg",
       title: "basic",
-      perks: ["Tri korisnička naloga", "Neograničen broj pacijenata", "Neograničen broj kartona", "Neograničeno zakazivanje termina", "Kreiranje anamneze", "Virtuelni račun", "Otpremanje RTG snimaka", "Višejezična aplikacija"],
+      perks: ["jedan korisnički nalog", "ograničen broj obračuna", "ograničene mogućnosti", "nemogućnost štampe", "online pristup"],
       pic: "",
       primary: false,
-      style: "left"
+      style: "left",
+      zakogaje: "otvoren pristup"
     },
     {
       image: "/images/logoNoBlur.svg",
@@ -17,7 +18,8 @@ export default function VrstePaketa() {
       perks: ["Pet korisnička naloga", "Sve što sadrži Basic paket", "Finansije i štampanje izveštaja", "Uvid u sva dugovanja pacijenata", "Kreiranje liste zadataka", "Sistem notifikacija", "Upravljanje korisničkim nalozima", "Puno manjih opcija"],
       pic: "",
       primary: true,
-      style: "bottom"
+      style: "bottom",
+      zakogaje: "za advokate, stečajne upravnike, veštake i knjigovođe"
     },
     {
       image: "/images/logoNoBlur.svg",
@@ -26,6 +28,8 @@ export default function VrstePaketa() {
       pic: "",
       primary: false,
       style: "right"
+      ,
+      zakogaje: "za velike poslovne sisteme"
     },
   ];
   return (

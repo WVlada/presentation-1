@@ -42,7 +42,7 @@ export default function PaketCard({ paket }) {
         someClass
       }
     >
-      <div className="bg-main mx-auto rounded text-center h-60 p-4 transition-transform md:w-48 shadow cursor-pointer drop-shadow-[0_10px_5px_rgba(0,0,0,0.35)] hover:scale-110">
+      <div className="bg-main opacity-90 mx-auto rounded text-center h-60 p-4 transition-transform md:w-48 shadow cursor-pointer drop-shadow-[0_10px_5px_rgba(0,0,0,0.35)] hover:scale-110">
         <p className="text-center text-white">{paket.title}</p>
         <div className="text-center mt-10">
           <Image
@@ -53,8 +53,8 @@ export default function PaketCard({ paket }) {
             alt="logo"
           />
         </div>
-        <p className="text-center mt-10 text-white text-xs">
-          aplikacija za računovodstvene agencije
+        <p className="text-center mt-10 text-white text-sm">
+          {paket.zakogaje}
         </p>
       </div>
       <div className="text-center h-14"></div>
