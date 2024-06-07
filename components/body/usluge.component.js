@@ -10,39 +10,39 @@ export default function Usluge() {
   let cards = [
     {
       title: "Obračun zakonske zatezne kamate",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      text: "Obrаčun zakonske zatezne kamate u dinarima ili devizama, prema važećim propisima uz moguća prilagođavanja za pojedine periode sa prostom ili konformnom metodom.",
       image: "/images/usluge1.png",
       flag: true,
     },
     {
       title: "Revalorizacija",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      text: "Revalorizacija iznosa u domaćoj ili stranoj valuti prema propisima.",
       image: "/images/usluge2.png",
       flag: true,
     },
     {
-      title: "Domaća i strana dugovanja/potraživanja",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      title: "Javni prihodi",
+      text: "Obračun dugovanja i potraživanja po osnovu javnih prihoda.",
       image: "/images/usluge3.png",
       flag: true,
     },
     {
       title: "Eskont",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      text: "Obračun dugovanja i potraživanja prema važećim eskontnim stopama centralnih banaka.",
       image: "/images/usluge4.png",
-      flag: false,
-    },
-    {
-      title: "Redovna kamata",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      image: "/images/usluge5.png",
-      flag: false,
-    },
-    {
-      title: "Dugovanja",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      image: "/images/usluge6.png",
       flag: true,
+    },
+    {
+      title: "Ugovorena kamata",
+      text: "Obračun dugovanja i potraživanja po stopi koju sami odaberete, po periodima.",
+      image: "/images/usluge5.png",
+      flag: true,
+    },
+    {
+      title: "Bankarski anuiteti",
+      text: "Obračun dugovanja i potraživanja prilagođen bankarskom obračunu u praksi.",
+      image: "/images/usluge6.png",
+      flag: false,
     },
   ];
   return (
@@ -52,11 +52,11 @@ export default function Usluge() {
       }
     >
       <div className="mt-5">
-        <p id="usluge" className="text-3xl font-bold mb-5 ">USLUGE APLIKACIJE</p>
+        <p  className="text-3xl font-bold mb-5 ">USLUGE APLIKACIJE</p>
         <span className="">
           <FontAwesomeIcon icon={faUsersLine} />
         </span>
-        <p className="w-50 text-lg mt-5">
+        <p id="usluge" className="w-50 text-lg mt-5">
           Aplikacija je razvijena iz višegodišnjeg iskustva u knjigovodstvu, sudskim i stečajnim postupcima.
         </p>
       </div>

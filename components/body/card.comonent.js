@@ -8,8 +8,6 @@ import {} from "@fortawesome/free-solid-svg-icons";
 import { type } from "os";
 import styles from "./card.module.css";
 
-
-
 export default function Card({ text, title, image, index, flag }) {
   let classname = " ";
   switch (index) {
@@ -50,9 +48,15 @@ export default function Card({ text, title, image, index, flag }) {
         someClass
       }
     >
-      {flag && <div className="absolute bg-main -right-8 rotate-45 top-6 drop-shadow-lg">
-        <p className="text-white text-xs py-2 px-8 font-bold">Neograničeno</p>
-      </div>}
+      {flag && title != "Bankarski anuiteti" ? (
+        <div className="absolute bg-main -right-8 rotate-45 top-6 drop-shadow-lg">
+          <p className="text-white text-xs py-2 px-8 font-bold">Neograničeno</p>
+        </div>
+      ) : (
+        <div className="absolute bg-red-400 -right-8 rotate-45 top-4 drop-shadow-lg">
+          <p className="text-white text-xs py-2 px-12 font-bold">Uskoro</p>
+        </div>
+      )}
 
       <div className="">
         {
