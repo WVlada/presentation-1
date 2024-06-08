@@ -47,11 +47,7 @@ export default function Carousel3() {
                 icon={faQuoteLeft}
                 className="opacity-70"
               />
-              “I am old, Gandalf. I don't look it, but I am beginning to feel it
-              in my heart of hearts. Well-preserved indeed! Why, I feel all
-              thin, sort of stretched, if you know what I mean: like butter that
-              has been scraped over too much bread. That can't be right. I need
-              a change, or something.”
+              Uskoro... aplikacija još nije pokrenuta!
             </p>
             <p className="mt-8">
               <FontAwesomeIcon color="#ffd500" icon={faStar} />
@@ -72,11 +68,7 @@ export default function Carousel3() {
               icon={faQuoteLeft}
               className="opacity-70"
             />
-            Do You Remember The Shire, Mr. Frodo? It'll Be Spring Soon. And The
-            Orchards Will Be In Blossom. And The Birds Will Be Nesting In The
-            Hazel Thicket. And They'll Be Sowing The Summer Barley In The Lower
-            Fields... And Eating The First Of The Strawberries With Cream. Do
-            You Remember The Taste Of Strawberries?
+            Uskoro... aplikacija još nije pokrenuta!
           </p>
           <p className="mt-8">
             <FontAwesomeIcon color="#ffd500" icon={faStar} />

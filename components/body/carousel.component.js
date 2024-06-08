@@ -8,10 +8,10 @@ import {} from "@fortawesome/free-solid-svg-icons";
 export default function Carousel() {
   let item = {
     images: [
-      "/images/laptoppng1.png",
-      "/images/laptoppng2.png",
-      "/images/laptoppng3.png",
-      "/images/laptoppng4.png",
+      "/images/laptoppng11.png",
+      "/images/laptoppng22.png",
+      "/images/laptoppng33.png",
+      "/images/laptoppng44.png",
     ],
   };
   const [currentPic, setCurrentPic] = useState(0);

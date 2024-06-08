@@ -5,8 +5,8 @@ export default function VrstePaketa() {
   let paketi = [
     {
       image: "/images/logoNoBlur.svg",
-      title: "basic",
-      perks: ["jedan korisnički nalog", "ograničen broj obračuna", "ograničene mogućnosti", "nemogućnost štampe", "online pristup"],
+      title: "probni",
+      perks: ["3 obračuna bilo koje vrste", "3 snimanja u arhivu", "ograničena podešavanja", "štampa obračuna sa watermarkom", "online pristup"],
       pic: "",
       primary: false,
       style: "left",
@@ -14,8 +14,15 @@ export default function VrstePaketa() {
     },
     {
       image: "/images/logoNoBlur.svg",
-      title: "professional",
-      perks: ["Pet korisnička naloga", "Sve što sadrži Basic paket", "Finansije i štampanje izveštaja", "Uvid u sva dugovanja pacijenata", "Kreiranje liste zadataka", "Sistem notifikacija", "Upravljanje korisničkim nalozima", "Puno manjih opcija"],
+      title: "poslovni",
+      perks: ["Neograničen broj obračuna",
+        "Neograničeno snimanje u arhivu",
+        "Štampanje u PDF bez ograničenja",
+        "Neograničena podešavanja",
+        "Kontakt i info servis 24h dnevno",
+        "Online pristup",
+        "Uračunate sve nadogradnje aplikacije",
+        "Godišnja pretplata",],
       pic: "",
       primary: true,
       style: "bottom",

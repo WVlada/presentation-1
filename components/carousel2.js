@@ -11,10 +11,10 @@ import styles from "./carousel2.module.css";
 export default function Carousel2() {
   let item = {
     images: [
-      "/images/laptoppng1.png",
-      "/images/laptoppng2.png",
-      "/images/laptoppng3.png",
-      "/images/laptoppng4.png",
+      "/images/laptoppng11.png",
+      "/images/laptoppng22.png",
+      "/images/laptoppng33.png",
+      "/images/laptoppng44.png",
     ],
     texts: [
       {
