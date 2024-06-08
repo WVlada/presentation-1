@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Hamburger } from "../components/header/hamburgermenu";
 
 const Header = () => {
-  const [bgState, useBg] = useState(false);
+  const [bgState, setBg] = useState(false);
   const [animate, setAnimateMenu] = useState(false);
   let animateMenu = animate
     ? " h-80 ease-in-out duration-500 transition-all z-50 opacity-100"
@@ -53,7 +53,7 @@ const Header = () => {
       document.getElementById("hamburgercheckbox").checked = false;
   };
   useEffect(() => {
-    //useBg(true)
+    //setBg(true)
   }, []);
   let bg = bgState
     ? " bg-none transition-all duration-700 drop-shadow-sm  "
@@ -61,9 +61,9 @@ const Header = () => {
 
   const headerFunction = () => {
     if (window.scrollY == 0) {
-      useBg(true);
+      setBg(true);
     } else {
-      useBg(false);
+      setBg(false);
     }
   };
   useEffect(() => {
@@ -74,9 +74,9 @@ const Header = () => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           //setSomeClass(styles.animateheader);
-          //useBg(false);
+          //setBg(false);
         } else {
-          //useBg(true);
+          //setBg(true);
         }
       });
     });
