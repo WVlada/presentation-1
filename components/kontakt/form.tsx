@@ -8,7 +8,7 @@ export default function KontakForm() {
     email: "x",
     poruka: "x",
   });
-  const handleTextAreaInput = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleTextAreaInput = (e: ChangeEvent<HTMLTextAreaElement>) => {
     setFormdata({ ...formData, poruka: e.currentTarget.value });
   };
   const handleEmailInput = (e: ChangeEvent<HTMLInputElement>) => {
