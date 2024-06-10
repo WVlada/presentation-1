@@ -8,12 +8,12 @@ export default function KontakForm() {
     email: "x",
     poruka: "x",
   });
-  const handleAnyInput = (input: string, value:string) =>{
-    console.log("input", input)
-    console.log("value", value)
-    setFormdata({...formData, [input]: value})
-  }
-  console.log(formData)
+  const handleTextAreaInput = (input: string, value: string) => {
+    setFormdata({ ...formData, poruka: input.currentTarget.value });
+  };
+  const handleEmailInput = (input: string, value: string) => {
+    setFormdata({ ...formData, email: input.currentTarget.value });
+  };
   const handleSubmit = async () => {
     // i dont care if you dont enter mail or name or whatever
     let options = {
@@ -22,7 +22,7 @@ export default function KontakForm() {
       headers: { "Content-type": "application/json" },
     };
     let response = await fetch("/api/sendemail", options);
-    let result = await response.json()
+    let result = await response.json();
     console.log("res>", result);
   };
   return (
@@ -42,9 +42,11 @@ export default function KontakForm() {
         id="input1"
         placeholder="Vaša email adresa"
         type="text"
+        onChange={handleEmailInput}
         className="bg-gray-200 w-full p-2 focus:border-white mb-4"
       ></input>
       <textarea
+        onChange={handleTextAreaInput}
         className="p-2 bg-gray-200 w-full"
         id="kontakttextarea"
         name="kontakttextarea"
