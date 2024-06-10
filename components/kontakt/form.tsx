@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import styles from "./kontakt.module.css";
 
 export default function KontakForm() {
@@ -8,11 +8,11 @@ export default function KontakForm() {
     email: "x",
     poruka: "x",
   });
-  const handleTextAreaInput = (input: React.ChangeEvent<HTMLInputElement>, value: string) => {
-    setFormdata({ ...formData, poruka: input.currentTarget.value });
+  const handleTextAreaInput = (event: ChangeEvent<HTMLInputElement>) => {
+    setFormdata({ ...formData, poruka: event.currentTarget.value });
   };
-  const handleEmailInput = (input: React.ChangeEvent<HTMLInputElement>, value: string) => {
-    setFormdata({ ...formData, email: input.currentTarget.value });
+  const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
+    setFormdata({ ...formData, email: event.currentTarget.value });
   };
   const handleSubmit = async () => {
     // i dont care if you dont enter mail or name or whatever
