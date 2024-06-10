@@ -8,11 +8,11 @@ export default function KontakForm() {
     email: "x",
     poruka: "x",
   });
-  const handleTextAreaInput = (event: ChangeEvent<HTMLInputElement>) => {
-    setFormdata({ ...formData, poruka: event.currentTarget.value });
+  const handleTextAreaInput = (e: ChangeEvent<HTMLInputElement>) => {
+    setFormdata({ ...formData, poruka: e.currentTarget.value });
   };
-  const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
-    setFormdata({ ...formData, email: event.currentTarget.value });
+  const handleEmailInput = (e: ChangeEvent<HTMLInputElement>) => {
+    setFormdata({ ...formData, email: e.currentTarget.value });
   };
   const handleSubmit = async () => {
     // i dont care if you dont enter mail or name or whatever
