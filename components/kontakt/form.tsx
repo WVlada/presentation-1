@@ -8,10 +8,10 @@ export default function KontakForm() {
     email: "x",
     poruka: "x",
   });
-  const handleTextAreaInput = (input: string, value: string) => {
+  const handleTextAreaInput = (input: React.ChangeEvent<HTMLInputElement>, value: string) => {
     setFormdata({ ...formData, poruka: input.currentTarget.value });
   };
-  const handleEmailInput = (input: string, value: string) => {
+  const handleEmailInput = (input: React.ChangeEvent<HTMLInputElement>, value: string) => {
     setFormdata({ ...formData, email: input.currentTarget.value });
   };
   const handleSubmit = async () => {
