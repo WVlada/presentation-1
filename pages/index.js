@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="w-full bg-backlinear sm:mb-20 -mt-12">
           <div className="flex flex-grow flex-col relative  max-w-[1200px] w-full mx-auto ">
-            <div className="mt-40 sm:mt-20 mb-48 sm:mb-20 h-screen flex flex-col justify-center">
+            <div className="mt-20 md:mt-40 mb-48 sm:mb-20 h-screen flex flex-col justify-center">
               <Carousel2 />
             </div>
           </div>
@@ -53,24 +53,24 @@ export default function Home() {
         <div className="flex flex-grow flex-col relative bg-mainlight w-full justify-center items-center -mt-14 ">
           <VrstePaketa />
         </div>
-        <div className="flex flex-grow flex-col relative bg-mainlight h-24 "></div>
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 -mt-36 "></div>
+        {/*<div className="flex flex-grow flex-col relative bg-mainlight h-24 "></div>*/}
+        <div className="bg-mainlight h-40 md:h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 md:-mt-36 -mt-12 "></div>
 
         <div className="flex w-full min-h-screen flex-grow flex-col relative -mt-20 ">
           <Klijenti />
         </div>
 
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 -mt-14 "></div>
+        <div className="bg-mainlight h-36 md:h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 -mt-24 "></div>
 
         <div className="flex flex-grow w-full flex-col relative bg-mainlight ">
           <Pitanja />
         </div>
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 -mt-32 "></div>
+        <div className="bg-mainlight h-28 md:h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 -mt-24 md:-mt-32 "></div>
 
-        <div className="flex flex-grow flex-col relative w-full -mt-14 -mb-10  ">
+        <div className="flex flex-grow flex-col relative w-full -mt-14 md:-mb-10  ">
           <Kontakt />
         </div>
-        <div className="bg-mainlight h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 z-10 -mt-2 "></div>
+        <div className="bg-mainlight h-28 md:h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10 z-10 md:-mt-2 "></div>
 
         <Footer />
       </main>
