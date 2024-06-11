@@ -28,7 +28,7 @@ export default function KontakForm() {
   return (
     <div
       className={
-        "bg-white rounded-sm drop-shadow-2xl w-full md:w-[400px] p-12 " +
+        "bg-white rounded-sm drop-shadow-2xl w-full md:w-[400px] p-6 md:p-12 " +
         styles.kontakt_forma
       }
     >

@@ -4,7 +4,7 @@ const Kontakt = () => {
   return (
     <div className="flex flex-grow min-h-screen bg-backkontaktimage bg-cover">
       <div className=" w-full bg-main flex justify-center bg-opacity-[.85] h-screen  pt-32 ">
-        <div className="max-w-[1200px] flex flex-col md:flex-row justify-center px-20">
+        <div className="max-w-[1200px] flex flex-col md:flex-row justify-center px-10 md:px-20">
           <div className="md:w-1/2 flex justify-center items-center px-10">
             <div>
               <p className="text-center md:text-left text-lg md:text-[40px]  text-white mt-10 mb-8">
@@ -19,7 +19,7 @@ const Kontakt = () => {
             </div>
           </div>
 
-          <div id={"contact"} className="md:w-1/2 flex items-center px-10">
+          <div id={"contact"} className="md:w-1/2 flex items-center md:px-10">
             <KontakForm />
           </div>
         </div>

@@ -53,7 +53,7 @@ export default function VrstePaketa() {
           Za više informacija kontaktirajte nas!
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mx-20 mb-10 paketgrid ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10 paketgrid ">
         {paketi.map((paket) => {
           return <PaketCard key={paket.title} paket={paket} />;
         })}
