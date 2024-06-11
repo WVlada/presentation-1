@@ -13,7 +13,7 @@ const Kontakt = () => {
               <p className="text-left text-[#ffffffcc] font-[400] text-[18px] tracking-[1.5px] leading-[1.8] hidden md:block">
                 Za više informacija o aplikaciji i potencijalnu saradnju
                 kontaktirajte nas e-mail:{" "}
-                {process.env.NEXT_PUBLIC_SENDGRID_TO_EMAIL} ili pomoću kontakt
+                {process.env.NEXT_PUBLIC_NODEMAILER_TO_EMAIL} ili pomoću kontakt
                 forme i odgovorićemo Vam u najkraćem mogućem vremenu.
               </p>
             </div>

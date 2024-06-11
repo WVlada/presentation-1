@@ -12,7 +12,7 @@ const Pitanja = () => {
     {
       pitanje: "Kako doći do aplikacije?",
       odgovor:
-        `Aplikacija je dostupna na ${process.env.NEXT_PUBLIC_OBRACUN_APP_PAGE}. Možete i da nam se obratite putem e-mail adrese: ${process.env.NEXT_PUBLIC_SENDGRID_TO_EMAIL} ili putem kontakt forme ispod, a mi ćemo Vam odgovoriti u najkraćem mogućem roku sa instrukcijama, prezentacijom i odgovorima na sva Vaša pitanja.`,
+        `Aplikacija je dostupna na ${process.env.NEXT_PUBLIC_OBRACUN_APP_PAGE}. Možete i da nam se obratite putem e-mail adrese: ${process.env.NEXT_PUBLIC_NODEMAILER_TO_EMAIL} ili putem kontakt forme ispod, a mi ćemo Vam odgovoriti u najkraćem mogućem roku sa instrukcijama, prezentacijom i odgovorima na sva Vaša pitanja.`,
       points: [],
     },
     {
@@ -34,7 +34,7 @@ const Pitanja = () => {
     {
       pitanje: "Ako dođe do problema, kome da se obratim?",
       odgovor:
-        `Možete nam se obratiti sa problemom na email adresu: ${process.env.NEXT_PUBLIC_SENDGRID_TO_EMAIL}. Takоđe, sama aplikacija unutar sebe ima kontakt formu u kojoj se komunicira direktno sa osobljem koje može rešiti svaki problem i odgovoriti na svako pitanje.`,
+        `Možete nam se obratiti sa problemom na email adresu: ${process.env.NEXT_PUBLIC_NODEMAILER_TO_EMAIL}. Takоđe, sama aplikacija unutar sebe ima kontakt formu u kojoj se komunicira direktno sa osobljem koje može rešiti svaki problem i odgovoriti na svako pitanje.`,
       points: [],
     },
   ];
