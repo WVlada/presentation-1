@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="w-full bg-backlinear sm:mb-20 -mt-12">
           <div className="flex flex-grow flex-col relative  max-w-[1200px] w-full mx-auto ">
-            <div className="mt-20 md:mt-40 mb-48 sm:mb-20 h-screen flex flex-col justify-center">
+            <div className="mt-20 mb-48 sm:mb-20 h-screen flex flex-col justify-center">
               <Carousel2 />
             </div>
           </div>
