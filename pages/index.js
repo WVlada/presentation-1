@@ -56,7 +56,7 @@ export default function Home() {
         {/*<div className="flex flex-grow flex-col relative bg-mainlight h-24 "></div>*/}
         <div className="bg-mainlight h-40 md:h-60 w-[160%] -rotate-[4deg] 2xl:-rotate-[2deg] -ml-10   z-10 md:-mt-36 -mt-12 "></div>
 
-        <div className="flex w-full min-h-screen flex-grow flex-col relative -mt-20 ">
+        <div className="flex w-full h-screen flex-grow flex-col relative -mt-20 justify-center items-center">
           <Klijenti />
         </div>
 
