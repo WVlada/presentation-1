@@ -3,35 +3,27 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 config.autoAddCss = false;
 const Footer = () => {
   return (
-    <div className="bg-mainlight pt-10 pb-10  flex flex-col justify-center text-sm text-footertextcolor font-normal w-full -mt-28 z-40 ">
+    <div className="bg-mainlight pt-10 pb-10  flex flex-col justify-center text-footertextcolor font-normal w-full -mt-28 z-40 text-lg ">
       <div className="pt-5 text-center">
-        <FontAwesomeIcon size="lg" color={"#0f2634"} icon={faFacebookF} />
-        <FontAwesomeIcon
-          className="ml-8"
-          size="lg"
-          color={"#0f2634"}
-          icon={faInstagram}
-        />
+        <Link href="https://www.facebook.com/profile.php?id=61551944593399">
+          <FontAwesomeIcon size="2xl" color={"#0f2634"} icon={faTwitter} />
+        </Link>
+        <Link href="https://www.facebook.com/profile.php?id=61551944593399">
+          <FontAwesomeIcon className="ml-8" size="2xl" color={"#0f2634"} icon={faFacebookF} />
+        </Link>
       </div>
       <div className="pt-5">
-        <p className="text-center">
-          Copyright © 2022 by Office Soft doo. All Rights Reserved.
-        </p>
+        <p className="text-center">Copyright © 2022 by Office Soft doo. All Rights Reserved.</p>
       </div>
       <div className="pt-5">
         <p className="text-center ">
-          Hand-crafted & made with {" "}
-          <FontAwesomeIcon
-            size="lg"
-            color={"#0f2634"}
-            className="fa-beat"
-            icon={faHeart}
-          />
+          Hand-crafted & made with <FontAwesomeIcon size="2xl" color={"#0f2634"} className="fa-beat ml-2" icon={faHeart} />
         </p>
       </div>
     </div>
