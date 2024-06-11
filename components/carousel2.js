@@ -104,7 +104,7 @@ export default function Carousel2() {
 
   
   return (
-    <div  className={"w-full flex flex-col mt-0 md:mt-40 text-white px-10 lg:px-20  "}>
+    <div  className={"w-full flex flex-col mt-0 text-white px-10 lg:px-20  "}>
       <div className={"relative flex lg:flex-row flex-col overflow-hidden "}>
         {item.texts.map((tex, index) =>
           index == currentPic2 ? (
