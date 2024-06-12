@@ -17,6 +17,7 @@ export default function Home() {
         <meta name="description" content="Office soft, obracun kamate i revalorizacija u dinarima i devizama." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="obracun, obracun kamate, offis soft, office-soft, office soft rs" />
+        <meta name="theme-color" content="#445865" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

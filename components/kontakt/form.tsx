@@ -45,7 +45,7 @@ export default function KontakForm() {
         className="bg-gray-200 w-full p-2 focus:border-white mb-4 border-blue-100 border"
       ></input>
       <input
-        id="input1"
+        id="input2"
         placeholder="Vaša email adresa"
         type="text"
         onChange={handleEmailInput}
