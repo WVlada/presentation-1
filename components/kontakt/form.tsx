@@ -62,6 +62,7 @@ export default function KontakForm() {
       ></textarea>
       <div className="flex flex-col items-center">
         <button
+          disabled={porukaPoslata}
           onClick={handleSubmit}
           type="button"
           className="mt-10 w-32 mb-5 text-sm transition-colors duration-700 hover:bg-white hover:text-tertiary text-center text-white hover:shadow bg-tertiary py-3 px-7 rounded-full"
