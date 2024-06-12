@@ -19,7 +19,7 @@ export default function Carousel2() {
     texts: [
       {
         text2: "Obračun svih vrsta neophodnih u privredi",
-        header: "Obračun dugovanja i potraživanja",
+        header: "Obračun potraživanja",
         header2: "Obračun",
         text: "Obračun zakonskih zateznih kamata na iznose u domaćoj i stranoj valuti, kao i revalorizacija i eskont dinarskih i deviznih, prema Zakonskim propisima, uz mogućnost odabira metode obračuna, perioda obračuna, načina pripisa glavnice i redosleda namirenja.",
       },
@@ -31,7 +31,7 @@ export default function Carousel2() {
       },
       {
         text2: "Snimanje obračuna u arhivu",
-        header: "Jednostavno snimanje obračuna i jednostavna pretraga",
+        header: "Snimanje i pretraga",
         header2: "Arhiva",
         text: "Obračuni se snimaju u neograničenom obimu, prema poveriocu, dužniku ili iznosu, i lako pretražuju prema istim kriterijumima.",
       },

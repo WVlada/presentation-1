@@ -57,7 +57,7 @@ export default function Usluge() {
           <FontAwesomeIcon icon={faUsersLine} />
         </span>
         <p id="usluge" className="w-50 text-lg mt-5">
-          Aplikacija je razvijena iz višegodišnjeg iskustva u knjigovodstvu, sudskim i stečajnim postupcima.
+          Aplikacija je razvijena iz višegodišnjeg iskustva u računovodstvu, sudskim i stečajnim postupcima.
         </p>
       </div>
 
