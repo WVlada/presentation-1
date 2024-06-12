@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="bg-mainlight pt-10 pb-10  flex flex-col justify-center text-footertextcolor font-normal w-full -mt-28 z-40 text-lg ">
       <div className="pt-5 text-center">
-        <Link href="https://www.facebook.com/profile.php?id=61551944593399">
+        <Link href="https://x.com/ObracunRS">
           <FontAwesomeIcon size="2xl" color={"#0f2634"} icon={faTwitter} />
         </Link>
         <Link href="https://www.facebook.com/profile.php?id=61551944593399">
