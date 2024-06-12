@@ -35,6 +35,11 @@ export default function PaketCard({ paket }) {
     });
     observer.observe(document.querySelector(".paketgrid"));
   });
+  const handleKontaktClick = () => {
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   return (
     <div
       className={
@@ -48,14 +53,12 @@ export default function PaketCard({ paket }) {
           <Image
             className="inline"
             src={paket.image}
-            width='50'
+            width="50"
             height="50"
             alt="logo"
           />
         </div>
-        <p className="text-center mt-10 text-white text-sm">
-          {paket.zakogaje}
-        </p>
+        <p className="text-center mt-10 text-white text-sm">{paket.zakogaje}</p>
       </div>
       <div className="text-center h-14"></div>
       <div
@@ -72,7 +75,10 @@ export default function PaketCard({ paket }) {
           )}
         </div>
         <div className="mb-10 mt-10">
-          <p className="uppercase text-2xl font-bold text-main"> {paket.title}</p>
+          <p className="uppercase text-2xl font-bold text-main">
+            {" "}
+            {paket.title}
+          </p>
         </div>
         <div className={"border-b w-full mb-10 " + styles.borderHover}></div>
         <div className="flex flex-col grow justify-center ">
@@ -95,6 +101,7 @@ export default function PaketCard({ paket }) {
         <div className={"border-b w-full mb-8 mt-8 "}></div>
         <div className={" justify-center "}>
           <button
+          onClick={handleKontaktClick}
             type="button"
             className="mb-5 text-sm transition-colors duration-700 hover:bg-white hover:text-mainlight text-center hover:shadow bg-tertiary py-3 px-7 rounded-full"
           >

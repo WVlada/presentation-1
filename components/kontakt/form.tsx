@@ -3,6 +3,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import styles from "./kontakt.module.css";
 
 export default function KontakForm() {
+  const [porukaPoslata, setPorukaPoslata] = useState(false);
   const [formData, setFormdata] = useState({
     name: "x",
     email: "x",
@@ -22,8 +23,13 @@ export default function KontakForm() {
       headers: { "Content-type": "application/json" },
     };
     let response = await fetch("/api/sendemail", options);
+    if (response.status != 200) {
+      setPorukaPoslata(false);
+    } else {
+      setPorukaPoslata(true);
+    }
     let result = await response.json();
-    console.log("res>", result);
+    //console.log("res>", result);
   };
   return (
     <div
@@ -60,7 +66,7 @@ export default function KontakForm() {
           type="button"
           className="mt-10 w-32 mb-5 text-sm transition-colors duration-700 hover:bg-white hover:text-tertiary text-center text-white hover:shadow bg-tertiary py-3 px-7 rounded-full"
         >
-          Pošalji
+          {porukaPoslata ? "Poruka poslata!" : "Pošalji"}
         </button>
       </div>
     </div>

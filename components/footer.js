@@ -18,10 +18,11 @@ const Footer = () => {
           <FontAwesomeIcon className="ml-8" size="2xl" color={"#0f2634"} icon={faFacebookF} />
         </Link>
       </div>
-      <div className="pt-5">
-        <p className="text-center">Copyright © 2022 by Office Soft doo. All Rights Reserved.</p>
+      <div className="pt-5 px-4">
+        <p className="text-center">Copyright © 2022 by Office Soft doo.</p>
+        <p className="text-center">All Rights Reserved.</p>
       </div>
-      <div className="pt-5">
+      <div className="pt-5 px-4">
         <p className="text-center ">
           Hand-crafted & made with <FontAwesomeIcon size="2xl" color={"#0f2634"} className="fa-beat ml-2" icon={faHeart} />
         </p>
