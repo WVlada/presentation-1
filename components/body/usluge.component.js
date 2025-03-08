@@ -52,13 +52,13 @@ export default function Usluge() {
       }
     >
       <div className="mt-5">
-        <p  className="text-3xl font-bold mb-5 ">USLUGE APLIKACIJE</p>
+        <h1  className="text-3xl font-bold mb-5 ">USLUGE APLIKACIJE</h1>
         <span className="">
           <FontAwesomeIcon icon={faUsersLine} />
         </span>
-        <p id="usluge" className="w-50 text-lg mt-5">
+        <h2 id="usluge" className="w-50 text-lg mt-5">
           Aplikacija je razvijena iz višegodišnjeg iskustva u računovodstvu, sudskim i stečajnim postupcima.
-        </p>
+        </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-12 p-10 mt-20">

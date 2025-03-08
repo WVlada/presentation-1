@@ -35,9 +35,9 @@ const Section = () => {
           </svg>
         </div>
       )}
-          <p ref={ref} className="text-left text-4xl font-bold text-white">
+          <h1 ref={ref} className="text-left text-4xl font-bold text-white">
             Aplikacija za obračun zakonske zatezne kamate
-          </p>
+          </h1>
           <p className="text-left text-white mt-5  ">
             <span className="font-bold">OBRAČUN.RS </span> je online aplikacija koja je kreirana za sve vrste obračuna kamata, zakonske zatezne kamate i revalorizacije, u skladu sa važećim zakonima i sudskom praksom
           </p>

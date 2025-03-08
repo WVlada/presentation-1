@@ -47,6 +47,12 @@ export default function Carousel2() {
   const [currentPic2, setCurrentPic2] = useState(0);
 
   const [arrayOfTimers, setArrayOfTimers] = useState([]);
+
+  const handlekontaktClick = () => {
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   
 
   useEffect(() => {
@@ -120,8 +126,8 @@ export default function Carousel2() {
               <div className={"mt-8 text-sm h-24 " + curentClass3}>
                 {tex.text}
               </div>
-              <div id="istaknuto" className={"mt-8 flex flex-grow items-end lg:items-center " + curentClass4}>
-                <button className="text-sm transition-colors duration-700 hover:bg-tertiary hover:text-white text-center text-secondary bg-white py-3 px-6 rounded-full">
+              <div id="istaknuto" className={"mt-8 flex flex-grow items-end lg:items-center z-40 " + curentClass4}>
+                <button onClick={handlekontaktClick} className=" text-sm transition-colors duration-700 hover:cursor-pointer hover:bg-tertiary hover:text-white text-center text-secondary bg-white py-3 px-6 rounded-full">
                   Kontakt za više informacija
                 </button>
               </div>
@@ -141,7 +147,7 @@ export default function Carousel2() {
                 style={{ objectFit: "contain" }}
                 alt="laptop image"
                 className={
-                  "absolute object-bottom " +
+                  "absolute object-bottom z-0 " +
                   (index == currentPic ? styles.animate_in_picture : styles.animate_out_picture)
                 }
               />

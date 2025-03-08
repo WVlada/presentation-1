@@ -70,7 +70,7 @@ export default function Card({ text, title, image, index, flag }) {
         }
       </div>
       <div>
-        <p className="text-xl font-bold mt-4 text-mainlight">{title}</p>
+        <h1 className="text-xl font-bold mt-4 text-mainlight">{title}</h1>
         <p className="text-sm mt-4 text-main">{text}</p>
       </div>
     </div>

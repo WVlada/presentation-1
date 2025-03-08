@@ -95,7 +95,7 @@ const Header = () => {
       >
         <div className="flex flex-row justify-between max-w-[1200px] w-full px-10 sm:px-20 md:px-auto">
           <div className="flex items-center">
-            <Link href="/">
+            <Link target="_blank" href="https://www.obracun.rs/">
               <div className="w-44 ">
                 <Image
                   className="inline"
